@@ -1,0 +1,362 @@
+{
+  "regions": [
+    {
+      "id": "asia",
+      "name": "Asia",
+      "modernHint": "western Turkey, the Aegean coast",
+      "labelAnchor": [29.0, 38.6],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [24.9, 36.2],
+          [28.5, 36.2],
+          [29.6, 37.0],
+          [31.9, 37.5],
+          [31.9, 40.3],
+          [30.6, 41.3],
+          [28.0, 41.0],
+          [26.3, 40.6],
+          [24.9, 39.0]
+        ]
+      ]
+    },
+    {
+      "id": "bithynia-pontus",
+      "name": "Bithynia et Pontus",
+      "modernHint": "northern Turkey along the Black Sea coast",
+      "labelAnchor": [35.3, 40.9],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [28.4, 39.8],
+          [32.0, 39.5],
+          [36.0, 39.5],
+          [40.0, 39.7],
+          [43.1, 40.0],
+          [43.3, 41.8],
+          [41.5, 42.3],
+          [37.0, 42.6],
+          [34.0, 43.0],
+          [30.5, 42.2],
+          [29.1, 41.7],
+          [28.3, 40.7]
+        ]
+      ]
+    },
+    {
+      "id": "galatia",
+      "name": "Galatia",
+      "modernHint": "central Turkey around Ankara",
+      "labelAnchor": [32.6, 39.4],
+      "labelMinZoom": 3,
+      "rings": [
+        [
+          [30.0, 38.3],
+          [31.5, 37.7],
+          [34.5, 37.7],
+          [36.0, 38.4],
+          [36.0, 40.3],
+          [34.0, 41.1],
+          [31.5, 41.1],
+          [30.0, 40.2]
+        ]
+      ]
+    },
+    {
+      "id": "cappadocia",
+      "name": "Cappadocia",
+      "modernHint": "east-central Turkey around Kayseri",
+      "labelAnchor": [35.8, 38.8],
+      "labelMinZoom": 3,
+      "rings": [
+        [
+          [33.3, 37.5],
+          [35.5, 36.7],
+          [38.0, 36.9],
+          [40.0, 37.6],
+          [40.0, 39.9],
+          [37.5, 40.6],
+          [35.0, 40.4],
+          [33.3, 39.5]
+        ]
+      ]
+    },
+    {
+      "id": "cilicia",
+      "name": "Cilicia",
+      "modernHint": "Turkey's southeastern Mediterranean coast around Adana",
+      "labelAnchor": [35.0, 37.3],
+      "labelMinZoom": 3,
+      "rings": [
+        [
+          [31.5, 35.7],
+          [32.3, 35.9],
+          [34.8, 35.9],
+          [35.7, 35.3],
+          [36.6, 35.8],
+          [37.4, 36.5],
+          [37.3, 38.3],
+          [34.5, 38.4],
+          [32.0, 38.0],
+          [31.5, 37.2]
+        ]
+      ]
+    },
+    {
+      "id": "lycia-pamphylia",
+      "name": "Lycia et Pamphylia",
+      "modernHint": "Turkey's southwestern coast around Antalya",
+      "labelAnchor": [30.2, 37.1],
+      "labelMinZoom": 3,
+      "rings": [
+        [
+          [28.3, 35.8],
+          [31.0, 35.4],
+          [33.1, 35.7],
+          [33.1, 36.9],
+          [32.6, 38.1],
+          [30.0, 38.1],
+          [28.3, 37.4]
+        ]
+      ]
+    },
+    {
+      "id": "armenia",
+      "name": "Armenia",
+      "modernHint": "eastern Turkey and Armenia, the highlands around Lake Van",
+      "labelAnchor": [43.9, 39.7],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [38.3, 38.9],
+          [40.0, 37.8],
+          [43.5, 37.8],
+          [46.0, 38.2],
+          [48.9, 38.6],
+          [49.4, 40.0],
+          [47.5, 41.6],
+          [44.5, 41.9],
+          [41.0, 41.9],
+          [38.3, 40.7]
+        ]
+      ]
+    },
+    {
+      "id": "syria",
+      "name": "Syria",
+      "modernHint": "Syria and Lebanon",
+      "labelAnchor": [37.8, 35.2],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [34.2, 33.0],
+          [36.4, 32.2],
+          [39.0, 32.3],
+          [40.3, 33.5],
+          [40.3, 36.5],
+          [38.5, 37.9],
+          [36.5, 37.9],
+          [35.5, 37.0],
+          [34.3, 36.0]
+        ]
+      ]
+    },
+    {
+      "id": "judaea",
+      "name": "Judaea",
+      "modernHint": "Israel and the Palestinian territories",
+      "labelAnchor": [35.1, 31.4],
+      "labelMinZoom": 3,
+      "rings": [
+        [
+          [33.6, 31.0],
+          [34.5, 29.0],
+          [35.5, 29.0],
+          [36.7, 30.5],
+          [36.7, 32.5],
+          [36.2, 33.9],
+          [34.8, 33.9],
+          [33.6, 32.8]
+        ]
+      ]
+    },
+    {
+      "id": "cyprus",
+      "name": "Cyprus",
+      "modernHint": "the island of Cyprus",
+      "labelAnchor": [33.2, 35.0],
+      "labelMinZoom": 3,
+      "rings": [
+        [
+          [31.8, 34.9],
+          [32.7, 34.1],
+          [34.3, 34.2],
+          [35.3, 34.9],
+          [35.0, 35.8],
+          [33.7, 36.2],
+          [32.3, 35.9]
+        ]
+      ]
+    },
+    {
+      "id": "arabia-petraea",
+      "name": "Arabia Petraea",
+      "modernHint": "Sinai, Jordan, and northwest Saudi Arabia",
+      "labelAnchor": [36.3, 30.4],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [32.2, 29.5],
+          [33.5, 27.0],
+          [36.0, 25.8],
+          [38.5, 25.8],
+          [40.0, 27.5],
+          [40.0, 31.5],
+          [38.0, 33.3],
+          [35.8, 33.3],
+          [33.8, 31.6],
+          [32.2, 31.3]
+        ]
+      ]
+    },
+    {
+      "id": "osroene",
+      "name": "Osroene",
+      "modernHint": "southeastern Turkey around Urfa",
+      "labelAnchor": [38.9, 37.0],
+      "labelMinZoom": 3,
+      "rings": [
+        [
+          [36.9, 35.5],
+          [39.5, 34.9],
+          [41.1, 35.5],
+          [41.1, 37.8],
+          [39.5, 38.4],
+          [37.5, 38.2],
+          [36.9, 36.8]
+        ]
+      ]
+    },
+    {
+      "id": "assyria",
+      "name": "Assyria",
+      "modernHint": "northern Iraq around Mosul and Erbil",
+      "labelAnchor": [43.4, 35.8],
+      "labelMinZoom": 3,
+      "rings": [
+        [
+          [40.8, 34.5],
+          [43.0, 33.3],
+          [45.5, 33.5],
+          [46.7, 34.8],
+          [46.5, 36.8],
+          [44.5, 38.1],
+          [42.0, 37.9],
+          [40.8, 36.5]
+        ]
+      ]
+    },
+    {
+      "id": "mesopotamia",
+      "name": "Mesopotamia",
+      "modernHint": "central and southern Iraq, the Tigris-Euphrates valley",
+      "labelAnchor": [44.3, 32.0],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [38.0, 33.5],
+          [40.5, 30.5],
+          [45.0, 28.8],
+          [49.3, 28.4],
+          [49.5, 31.0],
+          [47.5, 33.5],
+          [46.5, 36.0],
+          [43.0, 36.5],
+          [40.0, 36.5],
+          [38.0, 35.5]
+        ]
+      ]
+    },
+    {
+      "id": "media",
+      "name": "Media",
+      "modernHint": "northwestern Iran around Hamadan",
+      "labelAnchor": [48.2, 34.7],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [44.3, 33.5],
+          [46.5, 31.5],
+          [50.5, 31.5],
+          [52.5, 33.0],
+          [52.5, 37.5],
+          [51.0, 39.3],
+          [48.0, 39.3],
+          [45.5, 38.8],
+          [44.3, 37.0]
+        ]
+      ]
+    },
+    {
+      "id": "persis",
+      "name": "Persis",
+      "modernHint": "southwestern Iran, Fars around Shiraz",
+      "labelAnchor": [53.2, 29.8],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [48.5, 29.6],
+          [50.5, 27.8],
+          [53.0, 26.4],
+          [55.5, 26.6],
+          [56.5, 27.5],
+          [56.5, 30.0],
+          [56.0, 32.0],
+          [52.5, 33.0],
+          [49.5, 32.5],
+          [48.5, 31.0]
+        ]
+      ]
+    },
+    {
+      "id": "parthia-core",
+      "name": "Parthia",
+      "modernHint": "northeastern Iran and southern Turkmenistan",
+      "labelAnchor": [57.5, 35.8],
+      "labelMinZoom": 1,
+      "rings": [
+        [
+          [52.0, 32.5],
+          [57.0, 32.0],
+          [62.5, 32.5],
+          [62.5, 37.5],
+          [61.0, 39.5],
+          [56.5, 39.5],
+          [53.0, 38.8],
+          [51.8, 37.0]
+        ]
+      ]
+    },
+    {
+      "id": "caucasus",
+      "name": "Caucasus",
+      "modernHint": "Georgia and Azerbaijan, between the Black Sea and the Caspian",
+      "labelAnchor": [44.3, 41.9],
+      "labelMinZoom": 3,
+      "rings": [
+        [
+          [40.2, 41.2],
+          [43.5, 40.1],
+          [46.5, 40.1],
+          [48.5, 39.9],
+          [50.9, 40.3],
+          [50.9, 42.0],
+          [48.3, 44.1],
+          [45.0, 44.1],
+          [41.5, 43.8],
+          [39.9, 42.8]
+        ]
+      ]
+    }
+  ]
+}

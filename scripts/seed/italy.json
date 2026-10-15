@@ -1,0 +1,323 @@
+{
+  "regions": [
+    {
+      "id": "latium",
+      "name": "Latium",
+      "modernHint": "west-central Italy around Rome, from the Tiber mouth to Terracina",
+      "labelAnchor": [12.7, 41.7],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [11.5, 42.3],
+          [12.4, 42.5],
+          [13.2, 42.4],
+          [14.0, 42.0],
+          [14.0, 41.4],
+          [13.6, 41.0],
+          [13.0, 40.8],
+          [12.2, 41.2],
+          [11.5, 41.8],
+          [11.5, 42.3]
+        ]
+      ]
+    },
+    {
+      "id": "etruria",
+      "name": "Etruria",
+      "modernHint": "Tuscany and northern Lazio, between the Arno and the Tiber",
+      "labelAnchor": [11.2, 43.0],
+      "labelMinZoom": 1,
+      "rings": [
+        [
+          [9.6, 43.4],
+          [10.3, 44.2],
+          [11.3, 44.3],
+          [12.3, 43.7],
+          [12.6, 43.0],
+          [12.6, 42.2],
+          [12.6, 41.7],
+          [11.8, 41.5],
+          [10.6, 42.2],
+          [9.8, 42.9],
+          [9.6, 43.4]
+        ]
+      ]
+    },
+    {
+      "id": "umbria",
+      "name": "Umbria",
+      "modernHint": "the upper Tiber valley around Perugia, reaching the Adriatic near Rimini",
+      "labelAnchor": [12.8, 42.9],
+      "labelMinZoom": 3,
+      "rings": [
+        [
+          [11.9, 43.5],
+          [12.2, 44.5],
+          [13.6, 43.9],
+          [13.4, 43.2],
+          [13.0, 42.5],
+          [12.5, 42.2],
+          [12.0, 42.6],
+          [11.8, 43.1],
+          [11.9, 43.5]
+        ]
+      ]
+    },
+    {
+      "id": "picenum",
+      "name": "Picenum",
+      "modernHint": "the Marche and northern Abruzzo, the central Adriatic coast",
+      "labelAnchor": [13.4, 43.2],
+      "labelMinZoom": 3,
+      "rings": [
+        [
+          [12.6, 43.6],
+          [12.8, 44.3],
+          [14.0, 43.5],
+          [15.0, 42.5],
+          [14.4, 42.0],
+          [13.6, 42.2],
+          [13.0, 42.8],
+          [12.6, 43.6]
+        ]
+      ]
+    },
+    {
+      "id": "samnium",
+      "name": "Samnium",
+      "modernHint": "the southern Apennines of Abruzzo, Molise and Benevento",
+      "labelAnchor": [14.4, 41.6],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [13.0, 42.6],
+          [13.9, 42.7],
+          [14.7, 42.6],
+          [15.6, 42.0],
+          [15.6, 41.3],
+          [15.0, 40.9],
+          [14.6, 40.8],
+          [14.0, 41.2],
+          [13.4, 41.6],
+          [13.1, 42.1],
+          [13.0, 42.6]
+        ]
+      ]
+    },
+    {
+      "id": "campania",
+      "name": "Campania",
+      "modernHint": "the Bay of Naples and the plain around Capua, south to Paestum",
+      "labelAnchor": [14.2, 40.9],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [13.4, 41.4],
+          [13.9, 41.5],
+          [14.6, 41.4],
+          [15.2, 41.0],
+          [15.5, 40.5],
+          [15.4, 40.0],
+          [14.5, 39.9],
+          [13.6, 40.6],
+          [13.4, 41.4]
+        ]
+      ]
+    },
+    {
+      "id": "apulia",
+      "name": "Apulia",
+      "modernHint": "Puglia in Italy's southeast: the Gargano, the Foggia plain, and the heel",
+      "labelAnchor": [15.8, 41.4],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [15.2, 42.2],
+          [16.3, 42.5],
+          [18.0, 41.2],
+          [19.0, 40.4],
+          [18.4, 39.6],
+          [17.4, 40.2],
+          [16.9, 40.5],
+          [16.0, 40.6],
+          [15.4, 41.0],
+          [15.0, 41.5],
+          [15.2, 42.2]
+        ]
+      ]
+    },
+    {
+      "id": "lucania-bruttium",
+      "name": "Lucania & Bruttium",
+      "modernHint": "Basilicata and Calabria, the instep and toe of Italy",
+      "labelAnchor": [15.9, 40.3],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [15.2, 40.9],
+          [16.2, 41.0],
+          [17.0, 40.7],
+          [17.6, 40.2],
+          [17.4, 39.2],
+          [17.6, 38.7],
+          [16.8, 37.7],
+          [15.8, 37.5],
+          [15.2, 38.1],
+          [15.1, 39.0],
+          [14.9, 39.9],
+          [14.9, 40.5],
+          [15.2, 40.9]
+        ]
+      ]
+    },
+    {
+      "id": "magna-graecia",
+      "name": "Magna Graecia",
+      "modernHint": "the Greek coastal cities from Taranto around the gulf to Reggio",
+      "labelAnchor": [16.95, 39.05],
+      "labelMinZoom": 3,
+      "rings": [
+        [
+          [17.6, 40.7],
+          [16.9, 40.6],
+          [16.4, 40.2],
+          [16.1, 39.7],
+          [16.5, 39.3],
+          [16.7, 39.1],
+          [16.2, 38.7],
+          [15.95, 38.4],
+          [15.8, 38.28],
+          [15.1, 38.1],
+          [15.6, 37.5],
+          [16.4, 37.6],
+          [17.1, 38.3],
+          [17.8, 38.9],
+          [17.9, 39.6],
+          [17.5, 40.0],
+          [17.8, 40.3],
+          [17.6, 40.7]
+        ]
+      ]
+    },
+    {
+      "id": "cisalpina",
+      "name": "Gallia Cisalpina",
+      "modernHint": "the Po valley of northern Italy, Turin to the Adriatic",
+      "labelAnchor": [9.7, 45.2],
+      "labelMinZoom": 1,
+      "rings": [
+        [
+          [6.8, 45.2],
+          [7.0, 46.0],
+          [8.5, 46.6],
+          [10.0, 46.6],
+          [11.5, 46.3],
+          [12.6, 45.6],
+          [13.0, 44.8],
+          [12.9, 44.0],
+          [12.2, 43.8],
+          [11.0, 44.0],
+          [9.8, 44.3],
+          [8.7, 44.2],
+          [7.8, 44.3],
+          [7.0, 44.7],
+          [6.8, 45.2]
+        ]
+      ]
+    },
+    {
+      "id": "liguria",
+      "name": "Liguria",
+      "modernHint": "the Italian Riviera arc around Genoa",
+      "labelAnchor": [8.2, 44.15],
+      "labelMinZoom": 3,
+      "rings": [
+        [
+          [7.3, 44.2],
+          [7.5, 44.9],
+          [8.8, 44.8],
+          [9.9, 44.6],
+          [10.3, 44.2],
+          [10.0, 43.6],
+          [8.8, 43.4],
+          [7.6, 43.3],
+          [7.2, 43.7],
+          [7.3, 44.2]
+        ]
+      ]
+    },
+    {
+      "id": "venetia",
+      "name": "Venetia",
+      "modernHint": "northeast Italy: Verona, Padua, the Venice lagoon, and Friuli",
+      "labelAnchor": [13.0, 45.9],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [10.5, 45.2],
+          [10.4, 46.2],
+          [11.5, 46.8],
+          [12.8, 46.8],
+          [13.9, 46.5],
+          [14.2, 45.6],
+          [13.5, 45.0],
+          [12.5, 44.7],
+          [11.9, 44.9],
+          [10.5, 45.2]
+        ]
+      ]
+    },
+    {
+      "id": "sicilia",
+      "name": "Sicilia",
+      "modernHint": "the island of Sicily",
+      "labelAnchor": [14.2, 37.5],
+      "labelMinZoom": 1,
+      "rings": [
+        [
+          [11.8, 38.2],
+          [12.4, 38.7],
+          [13.5, 38.8],
+          [14.8, 38.7],
+          [15.9, 38.5],
+          [16.0, 37.8],
+          [15.4, 36.6],
+          [14.2, 36.1],
+          [12.8, 36.9],
+          [11.9, 37.5],
+          [11.8, 38.2]
+        ]
+      ]
+    },
+    {
+      "id": "sardinia-corsica",
+      "name": "Sardinia et Corsica",
+      "modernHint": "the islands of Sardinia and Corsica",
+      "labelAnchor": [9.0, 40.0],
+      "labelMinZoom": 1,
+      "rings": [
+        [
+          [7.6, 40.8],
+          [8.0, 41.5],
+          [9.3, 41.7],
+          [10.0, 41.0],
+          [10.2, 39.5],
+          [9.8, 38.5],
+          [8.8, 38.3],
+          [7.9, 39.0],
+          [7.6, 40.8]
+        ],
+        [
+          [8.0, 42.0],
+          [8.2, 42.9],
+          [9.0, 43.4],
+          [9.8, 43.0],
+          [9.9, 41.9],
+          [9.4, 41.2],
+          [8.5, 41.3],
+          [8.0, 42.0]
+        ]
+      ]
+    }
+  ]
+}

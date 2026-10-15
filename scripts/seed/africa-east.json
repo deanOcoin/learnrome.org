@@ -1,0 +1,130 @@
+{
+  "regions": [
+    {
+      "id": "aegyptus",
+      "name": "Aegyptus",
+      "modernHint": "Egypt: the Nile Delta and valley south to Aswan",
+      "labelAnchor": [30.8, 27.5],
+      "labelMinZoom": 1,
+      "rings": [
+        [
+          [24.5, 33.0],
+          [30.0, 33.0],
+          [32.3, 32.6],
+          [35.0, 32.0],
+          [35.3, 29.5],
+          [34.6, 27.7],
+          [36.0, 25.5],
+          [36.5, 23.3],
+          [24.5, 23.3],
+          [24.5, 33.0]
+        ]
+      ]
+    },
+    {
+      "id": "cyrenaica",
+      "name": "Cyrenaica",
+      "modernHint": "eastern Libya around Benghazi and the Jebel Akhdar",
+      "labelAnchor": [21.8, 31.6],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [18.8, 29.0],
+          [18.8, 31.0],
+          [19.8, 32.8],
+          [21.5, 33.8],
+          [24.0, 33.6],
+          [25.8, 33.0],
+          [25.8, 29.0],
+          [18.8, 29.0]
+        ]
+      ]
+    },
+    {
+      "id": "aethiopia-nubia",
+      "name": "Aethiopia (Nubia)",
+      "modernHint": "Sudan: the Nile valley south of Aswan, around Meroe",
+      "labelAnchor": [32.5, 17.5],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [28.0, 24.5],
+          [36.2, 24.5],
+          [38.8, 22.0],
+          [39.5, 18.0],
+          [40.0, 14.5],
+          [37.0, 11.5],
+          [30.0, 11.5],
+          [28.0, 14.0],
+          [28.0, 24.5]
+        ]
+      ]
+    },
+    {
+      "id": "arabia-felix",
+      "name": "Arabia Felix",
+      "modernHint": "Yemen and southwest Saudi Arabia",
+      "labelAnchor": [44.5, 15.5],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [41.0, 20.5],
+          [44.0, 21.2],
+          [49.0, 21.0],
+          [53.5, 20.5],
+          [55.5, 20.0],
+          [56.5, 16.5],
+          [52.5, 13.0],
+          [46.0, 11.8],
+          [43.0, 11.6],
+          [41.5, 13.0],
+          [41.0, 17.0],
+          [41.0, 20.5]
+        ]
+      ]
+    },
+    {
+      "id": "pontic-steppe",
+      "name": "Pontic Steppe",
+      "modernHint": "southern Ukraine and Crimea, north of the Black Sea",
+      "labelAnchor": [35.0, 47.8],
+      "labelMinZoom": 1,
+      "rings": [
+        [
+          [27.5, 44.8],
+          [30.0, 45.0],
+          [33.0, 43.9],
+          [36.6, 43.9],
+          [38.5, 44.3],
+          [41.0, 45.0],
+          [48.8, 45.5],
+          [48.5, 50.5],
+          [40.0, 50.8],
+          [33.0, 50.6],
+          [27.6, 50.0],
+          [27.5, 44.8]
+        ]
+      ]
+    },
+    {
+      "id": "hunnic-heartland",
+      "name": "Hunnic Heartland",
+      "modernHint": "the Great Hungarian Plain east of the Danube",
+      "labelAnchor": [20.8, 47.0],
+      "labelMinZoom": 3,
+      "rings": [
+        [
+          [18.9, 45.1],
+          [21.5, 45.0],
+          [24.3, 45.1],
+          [24.4, 47.2],
+          [24.3, 49.2],
+          [21.5, 49.3],
+          [18.9, 49.2],
+          [18.8, 47.2],
+          [18.9, 45.1]
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "regions": [
+    {
+      "id": "hispania-baetica",
+      "name": "Hispania Baetica",
+      "modernHint": "Andalusia in southern Spain, the Guadalquivir valley",
+      "labelAnchor": [-4.7, 37.7],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [-7.9, 38.3],
+          [-6.6, 39.1],
+          [-5.0, 39.2],
+          [-3.4, 39.0],
+          [-2.3, 38.8],
+          [-1.2, 38.5],
+          [-1.1, 37.6],
+          [-1.2, 36.6],
+          [-2.6, 36.0],
+          [-4.3, 36.0],
+          [-5.3, 35.95],
+          [-5.8, 35.98],
+          [-6.4, 36.2],
+          [-7.3, 36.4],
+          [-8.0, 36.9],
+          [-7.9, 37.6]
+        ]
+      ]
+    },
+    {
+      "id": "lusitania",
+      "name": "Lusitania",
+      "modernHint": "central and southern Portugal plus Spanish Extremadura",
+      "labelAnchor": [-7.9, 39.2],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [-10.4, 41.8],
+          [-8.4, 41.7],
+          [-6.9, 41.7],
+          [-5.4, 41.7],
+          [-4.9, 41.0],
+          [-4.9, 39.8],
+          [-5.0, 38.8],
+          [-5.4, 38.2],
+          [-6.8, 38.0],
+          [-7.2, 37.5],
+          [-7.3, 36.4],
+          [-8.9, 36.2],
+          [-10.3, 36.6],
+          [-10.6, 38.6],
+          [-10.5, 40.3]
+        ]
+      ]
+    },
+    {
+      "id": "hispania-tarraconensis",
+      "name": "Hispania Tarraconensis",
+      "modernHint": "eastern and northern Spain, from the Mediterranean coast to Galicia",
+      "labelAnchor": [-0.9, 41.6],
+      "labelMinZoom": 1,
+      "rings": [
+        [
+          [-10.4, 44.5],
+          [-6.5, 44.6],
+          [-4.0, 44.5],
+          [-2.0, 44.2],
+          [-0.7, 43.6],
+          [0.9, 43.2],
+          [2.4, 43.0],
+          [3.6, 42.8],
+          [4.0, 42.0],
+          [2.9, 41.0],
+          [1.5, 40.3],
+          [0.7, 39.6],
+          [0.9, 38.7],
+          [0.0, 37.9],
+          [-0.6, 37.0],
+          [-1.9, 36.8],
+          [-2.6, 37.4],
+          [-2.4, 38.7],
+          [-2.3, 39.9],
+          [-2.8, 41.4],
+          [-4.0, 42.0],
+          [-6.0, 42.0],
+          [-7.2, 41.3],
+          [-8.7, 40.9],
+          [-10.2, 40.9]
+        ]
+      ]
+    },
+    {
+      "id": "hispania-interior",
+      "name": "Hispania Interior",
+      "modernHint": "the central Spanish Meseta around Toledo and Madrid",
+      "labelAnchor": [-4.0, 39.9],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [-7.5, 42.9],
+          [-4.5, 43.2],
+          [-1.8, 43.1],
+          [-0.9, 42.4],
+          [-0.8, 40.8],
+          [-0.9, 39.4],
+          [-1.2, 38.3],
+          [-2.8, 37.8],
+          [-5.0, 37.9],
+          [-6.8, 38.1],
+          [-7.6, 38.9],
+          [-7.7, 41.0]
+        ]
+      ]
+    },
+    {
+      "id": "baleares",
+      "name": "Baleares",
+      "modernHint": "the Balearic Islands: Mallorca, Menorca, Ibiza",
+      "labelAnchor": [2.9, 39.6],
+      "labelMinZoom": 3,
+      "rings": [
+        [
+          [2.0, 39.6],
+          [2.3, 40.1],
+          [3.2, 40.4],
+          [4.1, 40.6],
+          [4.9, 40.3],
+          [4.8, 39.6],
+          [3.6, 39.1],
+          [2.4, 38.9]
+        ],
+        [
+          [0.9, 38.9],
+          [1.1, 39.4],
+          [1.8, 39.4],
+          [2.2, 38.9],
+          [1.6, 38.4],
+          [1.0, 38.5]
+        ]
+      ]
+    },
+    {
+      "id": "mauretania-tingitana",
+      "name": "Mauretania Tingitana",
+      "modernHint": "northern Morocco around Tangier and Fez",
+      "labelAnchor": [-5.5, 34.2],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [-6.1, 35.9],
+          [-5.5, 35.97],
+          [-4.9, 35.7],
+          [-3.5, 35.8],
+          [-2.4, 35.9],
+          [-1.4, 35.6],
+          [-1.4, 31.9],
+          [-4.5, 31.8],
+          [-8.0, 31.8],
+          [-10.9, 31.9],
+          [-11.0, 33.8],
+          [-10.0, 35.2],
+          [-7.4, 35.9]
+        ]
+      ]
+    },
+    {
+      "id": "mauretania-caesariensis",
+      "name": "Mauretania Caesariensis",
+      "modernHint": "the western and central Algerian coast",
+      "labelAnchor": [1.8, 34.9],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [-2.8, 36.3],
+          [-0.5, 36.8],
+          [1.5, 37.6],
+          [3.5, 37.9],
+          [5.3, 37.8],
+          [6.2, 37.5],
+          [6.2, 35.5],
+          [6.1, 33.4],
+          [2.5, 33.3],
+          [-1.0, 33.4],
+          [-2.8, 33.5],
+          [-2.9, 34.9]
+        ]
+      ]
+    },
+    {
+      "id": "numidia",
+      "name": "Numidia",
+      "modernHint": "eastern Algeria around Constantine",
+      "labelAnchor": [6.6, 35.8],
+      "labelMinZoom": 2,
+      "rings": [
+        [
+          [4.9, 37.4],
+          [6.3, 38.0],
+          [7.9, 38.0],
+          [9.3, 37.7],
+          [9.3, 36.3],
+          [9.2, 34.8],
+          [9.3, 33.4],
+          [7.0, 33.3],
+          [4.9, 33.4],
+          [4.9, 35.4]
+        ]
+      ]
+    },
+    {
+      "id": "africa-proconsularis",
+      "name": "Africa Proconsularis",
+      "modernHint": "Tunisia and the northwest Libyan coast",
+      "labelAnchor": [9.6, 35.4],
+      "labelMinZoom": 1,
+      "rings": [
+        [
+          [8.0, 37.9],
+          [9.6, 38.5],
+          [11.2, 38.2],
+          [11.7, 37.1],
+          [11.9, 36.0],
+          [12.1, 34.8],
+          [12.3, 33.8],
+          [13.6, 33.6],
+          [15.2, 33.2],
+          [16.4, 32.3],
+          [16.3, 31.1],
+          [14.2, 31.6],
+          [12.5, 31.5],
+          [10.7, 31.2],
+          [9.0, 31.3],
+          [7.9, 32.8],
+          [7.9, 35.5],
+          [7.8, 36.9]
+        ]
+      ]
+    }
+  ]
+}
