@@ -1,0 +1,816 @@
+// 264-133 BCE, Punic Wars to the Gracchi
+
+import type { RomeEvent } from '../../types';
+
+export const MIDDLE_REPUBLIC_EVENTS: RomeEvent[] = [
+  {
+    id: 'first-punic-264bce',
+    year: -264,
+    yearEnd: -241,
+    era: 'middle-republic',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'The First Punic War',
+    headline:
+      'A brawl over Messana drags Rome into twenty-three years of naval war against Carthage — a kind of war Rome has never fought and refuses to lose.',
+    tags: ['military'],
+    body: `In 264 BCE Rome sent an army outside the Italian peninsula for the first time. The occasion was small and sordid: the Mamertines, Campanian mercenaries who had seized the Sicilian city of Messana, appealed to both Carthage and Rome for protection. The Senate hesitated — helping oath-breaking mercenaries was hard to dress up — and, Polybius says, the assembly voted for war with the prospect of plunder in mind. The result was a twenty-three-year struggle against Carthage, the great naval power of the western Mediterranean, fought mostly at sea, where Rome began with almost nothing.
+
+Rome's answer was industrial. Using a beached Carthaginian quinquereme as a template, the state built a fleet of a hundred-plus warships in months and trained rowers on benches set up on dry land. To cancel Carthaginian seamanship, Roman ships carried the corvus, a spiked boarding bridge that turned sea battles into infantry fights — and won them at Mylae in 260 and at Ecnomus in 256, one of the largest naval battles ever fought by number of men engaged. Then the sea took its share: a storm off Camarina in 255 drowned tens of thousands of men in a single day, perhaps the worst maritime disaster in history. Rome rebuilt the fleet. Another storm took that one too.
+
+The land war meanwhile ground through Sicily for two decades, and Rome's one attempt to end it quickly — Regulus's invasion of Africa in 256 — collapsed when his army was destroyed outside Carthage. By 243 the treasury was empty. The last fleet was financed by loans from private citizens, repayable only in victory. That fleet ended the war off the Aegates Islands in 241, with Hamilcar Barca still unbeaten in his Sicilian mountain enclave when the peace was signed over his head.`,
+    whyItMatters: `The war did not prove Rome could fight at sea; it proved Rome's system could absorb losses that would have ended any other ancient state. Carthage fought rationally — pay mercenaries, protect trade, negotiate when the ledger turns. Rome lost something like five hundred warships and simply re-taxed, re-borrowed, and re-launched, because the alliance system built in Italy converted manpower and money into fleets on demand. Every rival Rome meets for the next century will make Carthage's mistake: assuming that beating Roman forces means beating Rome.`,
+    control: { sicilia: 'contested' },
+    connects: ['tarentum-272bce', 'pyrrhus-280bce', 'alliance-system-300bce'],
+    sources: [
+      {
+        author: 'Polybius',
+        work: 'Histories, Book 1',
+        note: 'Writing a century later to explain Rome to Greeks; admiring, and his storm-loss figures are defended by some scholars and doubted by others.',
+      },
+      {
+        author: 'Adrian Goldsworthy',
+        work: 'The Fall of Carthage',
+        note: 'Points out the "Rome had no navy" framing is overdone — Rome had long used allied Greek ships; what was new was the scale.',
+      },
+    ],
+  },
+  {
+    id: 'sicilia-province-241bce',
+    year: -241,
+    era: 'middle-republic',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'Sicilia, the First Province',
+    headline:
+      'Rome keeps Sicily but does not make it an ally — it invents something new instead: a territory that pays.',
+    tags: ['military', 'constitutional'],
+    body: `On 10 March 241 BCE, off the Aegates Islands west of Sicily, the proconsul Gaius Lutatius Catulus intercepted a Carthaginian relief fleet — undermanned, riding low with supplies for Hamilcar's army — and destroyed it. Carthage, financially bled white, authorized Hamilcar to negotiate. The terms: evacuate Sicily entirely and pay 3,200 talents. Rome now held a large, rich, populous island that was not Italian, and faced a question its constitution had never asked: what do you do with territory you rule but do not absorb?
+
+The Italian answer — alliance, with obligations paid in soldiers — was not applied. Sicilian communities were not asked for troops; they were assessed. Sicily became a provincia, a word that originally meant a task assigned to a magistrate — "the Sicilian command" — and now hardened into a place with borders and a governor. By 227 Rome created two new praetors to run Sicily and Sardinia year by year, each holding military and judicial power with no colleague on the spot to veto him and no assembly of the governed to answer to. The core obligation was a tithe: one-tenth of the grain harvest, assessed and collected through fiscal machinery Rome largely inherited intact from Hiero of Syracuse, whose eastern kingdom stayed on as a loyal allied state. Rome did not invent provincial administration so much as confiscate a Hellenistic king's and staple a magistrate on top. No consultation, no citizenship, no path to it.
+
+The distinction is the important thing. Allies gave men and fought Rome's wars; subjects gave grain and money. Italy was a partnership under duress; a province was revenue.`,
+    whyItMatters: `Every acquisition for the next four centuries gets poured into a mold cast for Sicily in 241: a governor with military power, a tax quota, and no institutional voice for the governed. That template scales indefinitely, which is why Rome can digest the Mediterranean at all — but it also means the empire is born as an extraction machine run by short-term magistrates, and the abuses that corrode the late Republic are structural from the first day. Sicilian grain also starts feeding the city of Rome itself, and a capital fed from overseas is a new kind of political fact.`,
+    control: { sicilia: 'provincial' },
+    markers: [{ type: 'battle', label: 'Aegates Islands', at: [12.06, 37.97] }],
+    connects: ['first-punic-264bce', 'alliance-system-300bce'],
+    sources: [
+      { author: 'Polybius', work: 'Histories, Book 1' },
+      {
+        author: 'Cicero',
+        work: 'In Verrem',
+        note: 'Our clearest description of the Sicilian tithe system, but written 170 years later in a prosecution speech — it projects the mature system backward.',
+      },
+    ],
+  },
+  {
+    id: 'sardinia-seizure-238bce',
+    year: -238,
+    era: 'middle-republic',
+    weight: 1,
+    reliability: 'well-attested',
+    title: 'Rome Seizes Sardinia',
+    headline:
+      'While Carthage fights its own unpaid mercenaries for survival, Rome takes Sardinia at swordpoint — a land grab even Rome’s admirers called unjust.',
+    tags: ['military'],
+    body: `After the peace of 241, Carthage's unpaid mercenary army mutinied and the revolt became a war of extermination in Africa — the "Truceless War," fought with crucifixions and trampling by elephants. In the middle of it, the mercenary garrison on Sardinia rebelled too and invited Rome in. Rome at first declined. In 238, with Carthage finally winning in Africa and preparing to reoccupy the island, Rome reversed itself, declared the reoccupation an act of war, and demanded Sardinia plus a further 1,200 talents. Carthage, in no condition to fight anyone, submitted.
+
+Polybius — no enemy of Rome — calls the seizure contrary to all justice. Corsica was folded in with Sardinia as a single command, and Roman armies then spent decades subduing the mountainous interior, a small ugly war the sources barely dignify.
+
+The diplomatic damage was permanent. Within a year Hamilcar Barca sailed for Spain to build Carthage a new empire beyond Rome's reach.`,
+    whyItMatters: `Polybius names this seizure, not Saguntum, as a true cause of the Second Punic War, and the logic holds: 238 taught Carthage that keeping treaties with Rome earned nothing, which made the Barcid project in Spain rational and revenge respectable. It also punctures the idea of a Roman master plan — this is opportunism, taken because it could be, and the empire grows by many such moments.`,
+    control: { 'sardinia-corsica': 'provincial' },
+    connects: ['first-punic-264bce', 'sicilia-province-241bce'],
+    sources: [
+      {
+        author: 'Polybius',
+        work: 'Histories, Books 1 and 3',
+        note: 'Explicitly condemns the seizure as unjustifiable — the pro-Roman source undercutting Rome’s own case.',
+      },
+    ],
+  },
+  {
+    id: 'barcid-spain-237bce',
+    year: -237,
+    yearEnd: -219,
+    era: 'middle-republic',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'The Barcids Build a Spanish Empire',
+    headline:
+      'Hamilcar Barca marches an army into Spain and builds Carthage a private empire of silver — and his son grows up inside it, sworn against Rome.',
+    tags: ['military', 'economic'],
+    body: `In 237 BCE Hamilcar Barca, the general who had never been beaten in Sicily, crossed to Spain and began building what the peace of 241 had taken away. Over eighteen years he, his son-in-law Hasdrubal, and his son Hannibal conquered and organized southern and eastern Iberia: tribute, recruits, and above all silver — the mines in the hinterland of New Carthage were later said to employ forty thousand workers and to yield the treasury a fortune every day — output on a scale that recapitalized a state that had just paid two war indemnities. Rome, busy with Gauls in the Po valley and pirates in Illyria, sent the occasional inquiring embassy and was politely reassured; one envoy was told the conquests were simply how Carthage would pay Rome its money.
+
+Hasdrubal founded New Carthage — a purpose-built capital with the best harbor on the coast and the mines at its back — and around 226 agreed with Rome that Carthaginian arms would stay south of the Ebro. Hannibal took command in 221, aged about twenty-six, over an army that had known his family for a generation. The famous oath — the nine-year-old swearing at his father's altar never to be a friend to Rome — comes from Hannibal's own telling decades later, at the court of Antiochus; it may be true, and it was certainly useful.
+
+In 219 Hannibal besieged and took Saguntum, a Roman "friend" well south of the Ebro, after eight months in which Rome sent protests and no army. Rome then demanded he be handed over. In the Carthaginian senate, the Roman envoy gathered the folds of his toga and said he carried peace and war in them — choose. Carthage chose Hannibal.`,
+    whyItMatters: `Spain is why there is a second Punic war worth the name: the indemnities of 241 and 238 were meant to keep Carthage harmless, and Spanish silver quietly reversed them, funding an army that Rome neither taxed nor monitored. It also decided the war's geography in advance — Carthage's real war-making capacity now sat in Iberia, which is why the decisive campaign will be fought there rather than in Italy, and why the loss of Spain, not any battle Hannibal loses, is what breaks Carthage.`,
+    control: {
+      'hispania-baetica': 'rival-carthage',
+      'hispania-tarraconensis': 'rival-carthage',
+    },
+    connects: ['first-punic-264bce', 'sardinia-seizure-238bce'],
+    sources: [
+      {
+        author: 'Polybius',
+        work: 'Histories, Books 2–3',
+        note: 'Worked from both a pro-Roman and a pro-Carthaginian tradition; the "Barcid wrath" framing of the war’s origins is contested.',
+      },
+      { author: 'Dexter Hoyos', work: "Hannibal's Dynasty" },
+    ],
+  },
+  {
+    id: 'roads-italy-220bce',
+    year: -220,
+    dateNote: 'c.',
+    era: 'middle-republic',
+    weight: 1,
+    reliability: 'well-attested',
+    title: 'The Road Network',
+    headline:
+      'Rome’s roads run dead straight through marsh and mountain because they were built to move legions and orders, not goods.',
+    tags: ['infrastructure'],
+    body: `Around 220 BCE the censor Gaius Flaminius drove the Via Flaminia north across the Apennines to Ariminum on the Adriatic — straight into land recently confiscated from the Gauls. It followed the model of the Via Appia a century earlier: surveyed alignments that ignore terrain, engineered foundations, all-weather surfaces, and milestones counting from Rome. By the end of the era, trunk roads stitched together every region of Italy and every Latin colony planted to hold it.
+
+Their purpose was stated in their design. A legion on a Roman road moved twenty-five kilometers a day in any season; official couriers moved far faster; colonies sat on the roads like knots on a net. What the roads mostly did not carry was commerce. Overland haulage of bulk goods was ruinously expensive in the ancient world — grain moved by sea and river at a small fraction of the cost — so trade took ships while the roads carried soldiers, magistrates, and news.
+
+That is why the network reads like a diagram of control rather than a map of markets: Rome at the center, spokes to the frontiers, allies wired to the hub and barely to each other.`,
+    whyItMatters: `The roads are the alliance system poured in stone. They are why Roman armies concentrate faster than any coalition of neighbors can, why a rebellion in one region meets legions from three others, and why the allies — connected to Rome but not to one another — never combine against the center. Infrastructure here is strategy with a two-century payoff, and when Hannibal tries to pull Italy apart, the net is one of the reasons it holds.`,
+    control: {},
+    nonTerritorial: true,
+    spatialFocus: ['latium', 'campania', 'cisalpina'],
+    misconception: {
+      claim: 'Roman roads were built to carry trade and knit the economy together.',
+      correction:
+        'They were military and administrative instruments — for legions, couriers, and magistrates. Bulk trade went by water, because land haulage was ruinously expensive; a cart of grain roughly doubled in cost long before it crossed Italy. Merchants used the roads, but merchants did not get roads built.',
+    },
+    connects: ['via-appia-312bce', 'samnite-wars-343bce', 'alliance-system-300bce'],
+    sources: [
+      { author: 'Livy', work: 'Ab Urbe Condita', note: 'Censorial road-building notices, scattered and terse.' },
+      { author: 'Ray Laurence', work: 'The Roads of Roman Italy' },
+    ],
+  },
+  {
+    id: 'hannibal-alps-218bce',
+    year: -218,
+    era: 'middle-republic',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'Hannibal Crosses the Alps',
+    headline:
+      'Hannibal takes the war to Italy by land, loses half his army in the mountains, and destroys a Roman army before the year is out.',
+    tags: ['military'],
+    body: `In spring 218 BCE Hannibal marched out of New Carthage with, by Polybius's figures, some 90,000 foot and 12,000 horse, crossed the Ebro and the Pyrenees, ferried his elephants over the Rhone on rafts, slipped past a Roman army sent to intercept him, and went up into the Alps as autumn closed the passes. Ambushes, rockfalls, snow, and desertion did the rest: he came down into Cisalpine Gaul with about 20,000 infantry and 6,000 cavalry — figures Polybius says he read on a bronze inscription Hannibal himself later set up in Italy. Which pass he used has been argued for two thousand years and is still unsettled.
+
+The gamble had a precise logic. Rome's strength was Italian manpower delivered through its alliance system; a war fought inside Italy might pry the allies loose, and the Gauls of the Po valley — crushed by Rome only years before — were a recruiting ground waiting at the bottom of the mountains. They rose, and his army refilled. The march also wrecked Rome's plan for the war, which had been to fight it in Spain and Africa simultaneously: the consul Publius Scipio, arriving at the Rhone too late to intercept, sent his army on to Spain under his brother and raced back to defend Italy with whatever was at hand.
+
+In December, at the Trebia, Hannibal showed what the rebuilt army could do. The consul Sempronius Longus was baited into attacking across a freezing river, unfed, into prepared ground; Hannibal's brother Mago rose from concealment in a drainage ditch with two thousand men and took the Roman line from behind. Perhaps two-thirds of an army of 40,000 was lost, and northern Italy went with it.`,
+    whyItMatters: `The Alps crossing gets remembered as spectacle, but it was an argument about where Rome could be hurt: not in Spain, not at sea, but in the loyalty of its Italian allies. Everything Hannibal does for the next fifteen years follows from that single strategic judgment, and the war becomes a controlled experiment on whether Rome's alliance system can hold under battlefield catastrophe. Trebia also set the tactical pattern — Roman aggression harnessed against itself — that Trasimene and Cannae will repeat at growing scale.`,
+    control: {},
+    markers: [{ type: 'battle', label: 'Trebia', at: [9.6, 45.05] }],
+    connects: ['barcid-spain-237bce', 'sardinia-seizure-238bce', 'first-punic-264bce'],
+    sources: [
+      {
+        author: 'Polybius',
+        work: 'Histories, Book 3',
+        note: 'Claims to have interviewed survivors and retraced the route himself; his figures rest partly on Hannibal’s own commemorative inscription.',
+      },
+      {
+        author: 'Livy',
+        work: 'Ab Urbe Condita, Book 21',
+        note: 'Vivid and patriotic; his Alpine geography is confused and dramatized.',
+      },
+    ],
+  },
+  {
+    id: 'trasimene-217bce',
+    year: -217,
+    dateNote: 'June 21',
+    era: 'middle-republic',
+    weight: 1,
+    reliability: 'well-attested',
+    title: 'Lake Trasimene and the Fabian Strategy',
+    headline:
+      'Hannibal hides an entire army in the morning fog above Lake Trasimene, kills a consul by midday, and Rome answers with a strategy of not fighting.',
+    tags: ['military'],
+    body: `In June 217 BCE the consul Gaius Flaminius, pursuing Hannibal through Etruria, marched his column along the north shore of Lake Trasimene in thick morning fog. Hannibal had posted his whole army on the hills above the road. When the trap closed, some 15,000 Romans were killed or drowned in about three hours, Flaminius among them; days later, 4,000 cavalry sent ahead by the other consul were caught and destroyed as well. It was, and remains, one of the largest ambushes of an entire army in military history.
+
+Rome appointed Quintus Fabius Maximus dictator, and Fabius did the unthinkable: he refused battle. Shadow the enemy from high ground, cut off foragers, burn what he could use, never accept the fight Hannibal wanted. Romans called him Cunctator — the Delayer — as an insult first. It became an honorific only after the alternative had been tried.
+
+The alternative was already gathering. A strategy of patience read as cowardice in a political culture where consuls had one year to win glory, and by 216 Rome would return to the battlefield with the largest army it had ever raised.`,
+    whyItMatters: `Fabius had found the correct answer to Hannibal — a general who cannot be out-generaled must be starved of battles — and the Republic's own incentive structure made the answer unsustainable. Annual magistrates cannot run multi-year strategies of self-denial; the electorate wanted a hammer. Trasimene therefore explains Cannae: the disaster of 216 is not a failure of Roman tactics so much as the political system overruling the one strategy that was working.`,
+    control: { etruria: 'contested' },
+    markers: [{ type: 'battle', label: 'Lake Trasimene', at: [12.1, 43.13] }],
+    connects: ['hannibal-alps-218bce', 'gallic-sack-390bce'],
+    sources: [
+      { author: 'Polybius', work: 'Histories, Book 3' },
+      { author: 'Livy', work: 'Ab Urbe Condita, Book 22' },
+    ],
+  },
+  {
+    id: 'cannae-216bce',
+    year: -216,
+    dateNote: 'August 2',
+    era: 'middle-republic',
+    weight: 3,
+    reliability: 'well-attested',
+    title: 'Cannae',
+    headline:
+      'On a single August afternoon Hannibal surrounds and annihilates the largest army Rome has ever fielded — and Rome refuses even to receive his envoy.',
+    tags: ['military'],
+    body: `On 2 August 216 BCE, near the village of Cannae in Apulia, Rome staked everything on mass. Both consular armies were combined — roughly 80,000 men under the consuls Varro and Paullus, about twice the size of any previous Roman force — with orders to crush Hannibal's 50,000 by sheer weight. By evening the Roman army had ceased to exist. Polybius puts the dead at 70,000, Livy at over 48,000; either figure makes it one of the deadliest single days of battle in all of history, in the same range as the industrial slaughters of the twentieth century. Paullus was killed, along with about eighty men of senatorial rank and twenty-nine military tribunes. Varro escaped with a remnant.
+
+The mechanics have been studied in staff colleges ever since. Hannibal placed his Gauls and Spaniards in a bowed center that gave ground under the Roman push — a controlled, deliberate collapse that drew the legions forward into a pocket. His veteran African infantry, many wearing armor stripped from the dead of Trebia and Trasimene, stood fast on the wings and wheeled inward; his cavalry, having swept the Roman horse from the field, returned to seal the rear. Eighty thousand men were compressed into a killing floor where most could not raise their arms. It is the double envelopment — the annihilation battle every later general has dreamed of repeating.
+
+Rome's response is the part that decides the war. The Senate declined to ransom the eight thousand prisoners — men who had surrendered were of no further use to the state. Public mourning was cut short by decree. Two new legions were raised by purchasing and enrolling eight thousand slaves. And in the Forum Boarium, two Gauls and two Greeks were buried alive — a human sacrifice that Livy, reporting it, calls utterly un-Roman. The state was terrified, and did not negotiate. When Hannibal sent an envoy to discuss terms, Rome refused to let him enter the city.
+
+Then came the defections Hannibal had built his whole war to produce: Capua, second city of Italy, went over, and with it much of Samnium, Lucania, Bruttium, and the Greek south, while Philip V of Macedon signed a treaty with the winner. The map of southern Italy turned against Rome. But the inner structure held. Not one Latin colony defected, the roads and fortresses stayed Roman, and the Campanian and Latin core kept delivering soldiers. Livy gives the Carthaginian cavalry commander Maharbal a famous reproach — Hannibal knew how to win a victory, not how to use one. The line is almost certainly literature. The real answer was worse for Hannibal: he had used the victory exactly as intended, and the thing it was meant to break did not break.`,
+    whyItMatters: `Cannae is the experiment that proves the alliance system. Hannibal's theory of victory was orthodox and reasonable: smash the field armies, and a hegemon's coalition dissolves — that is how every Hellenistic war ended. Rome's coalition instead bent at the periphery and held at the core, and the state raised new legions within months from a manpower pool the Barcids could not match, while refusing negotiation as a matter of policy. After Cannae the war has only one possible ending, and everyone in the Mediterranean slowly realizes it: a power that cannot be defeated by the destruction of its armies cannot be defeated by battle at all. Cannae also enters Rome's imagination as the unit of catastrophe — the disaster survived — and the memory that Rome does not treat while an enemy stands on Italian soil hardens into permanent doctrine.`,
+    misconception: {
+      claim: 'Hannibal threw away the war by failing to march on Rome right after Cannae.',
+      correction:
+        'He had no siege train, and Rome was a walled city that could man its ramparts even after Cannae; a failed assault would have squandered the victory. His actual strategy — detach Rome’s allies — was the rational one, and it half-worked. It failed because the Latin core of the alliance held, not because he missed his moment. The "march on Rome" reproach comes from a speech Livy invented for dramatic effect.',
+    },
+    control: {
+      campania: 'contested',
+      apulia: 'contested',
+      'lucania-bruttium': 'contested',
+      'magna-graecia': 'contested',
+    },
+    markers: [{ type: 'battle', label: 'Cannae', at: [16.13, 41.3] }],
+    connects: ['hannibal-alps-218bce', 'trasimene-217bce', 'alliance-system-300bce'],
+    sources: [
+      { author: 'Polybius', work: 'Histories, Book 3' },
+      {
+        author: 'Livy',
+        work: 'Ab Urbe Condita, Book 22',
+        note: 'Shifts blame onto Varro, the "popular" consul — senatorial spin visible in the seams; the Maharbal scene is his set-piece.',
+      },
+      { author: 'Adrian Goldsworthy', work: 'Cannae: Hannibal’s Greatest Victory' },
+    ],
+  },
+  {
+    id: 'capua-syracuse-215bce',
+    year: -215,
+    yearEnd: -211,
+    era: 'middle-republic',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'Capua and Syracuse Defect — and Are Destroyed',
+    headline:
+      'Rome’s two greatest defectors are besieged, starved, and turned into demonstrations of what defection costs.',
+    tags: ['military'],
+    body: `After Cannae the defections acquired names. Capua, the second city of Italy, negotiated its way into Hannibal's camp on generous terms — no Capuan would ever be forced to serve Carthage. Syracuse, Rome's oldest and richest Sicilian ally, flipped after the old king Hiero died in 215 and his teenage successor was murdered amid pro-Carthaginian intrigue; Tarentum and much of the Greek south followed, and Philip V of Macedon allied with the winner. Rome's answer defined the rest of the war: while refusing pitched battle with Hannibal himself, it methodically besieged the defectors one by one, starting with the two greatest.
+
+Syracuse fell first. Marcellus invested it from 213, and the defense became legend because Archimedes ran it: torsion artillery graded by range, and the great claw that lifted assault ships by the prow. (The burning mirrors are a later embellishment.) In 212 the Romans scaled a weakly manned stretch of wall during a festival; in the sack, Archimedes was killed by a soldier, against Marcellus's orders. The haul of Syracusan art carried back to Rome started the Roman appetite for Greek plunder.
+
+Capua was strangled inside a double ring of siege works. In 211 Hannibal tried to break the siege by marching on Rome itself — the moment that gave Latin its bogeyman phrase, Hannibal at the gates — but the armies at Capua did not move, and neither did Rome. Capua starved, surrendered, and was politically erased: its senators executed, its people sold or scattered, its land confiscated, the city kept alive only as a farm town run by a Roman prefect.`,
+    whyItMatters: `These sieges, not any battle, are where Hannibal's strategy dies. His entire theory required that defection be safe — that he could protect the allies he detached. Capua and Syracuse proved the opposite in the most public way possible: Rome would spend years and armies to annihilate a defector, and Hannibal, unbeatable in the field, could not save either city. After 211 the queue of potential defectors evaporates, and Hannibal's presence in Italy becomes strategically inert — a decade of undefeated irrelevance.`,
+    control: { sicilia: 'contested' },
+    markers: [{ type: 'siege', label: 'Syracuse', at: [15.29, 37.06] }],
+    connects: ['cannae-216bce', 'alliance-system-300bce', 'sicilia-province-241bce'],
+    sources: [
+      { author: 'Livy', work: 'Ab Urbe Condita, Books 25–26' },
+      {
+        author: 'Plutarch',
+        work: 'Life of Marcellus',
+        note: 'The Archimedes anecdotes grow with each ancient retelling; the death scene exists in three versions.',
+      },
+    ],
+  },
+  {
+    id: 'denarius-211bce',
+    year: -211,
+    dateNote: 'c.',
+    era: 'middle-republic',
+    weight: 1,
+    reliability: 'well-attested',
+    title: 'The Denarius',
+    headline:
+      'Broke in the middle of the Hannibalic war, Rome scraps its currency and mints the denarius — the coin the Mediterranean will use for four centuries.',
+    tags: ['economic'],
+    body: `By 212 BCE the war had wrecked Rome's money. The bronze as, the traditional unit, had been devalued step by step until it weighed a fraction of its old standard; the silver coinage struck on Greek models had failed with the treasury that backed it. Around 211, flush with the plunder of Syracuse, Rome carried out a complete recoinage centered on a new silver coin: the denarius, the "tenner," worth ten bronze asses, struck alongside fractions like the sestertius. It was an emergency measure. It lasted more than four hundred years.
+
+The system it anchored was war finance made permanent. Citizens paid tributum, a direct war levy; the state borrowed from its own contractors and citizens; temple treasuries were tapped; and soldiers' pay — the largest expense any ancient state had — now flowed through a single, trusted silver unit. Wherever the legions went, the denarius followed, and markets from Spain to Greece learned to price in it.
+
+A practical consequence sat underneath: a state paying armies in silver needs silver, in bulk, forever. Rome's grip on the Spanish mines stopped being spoils and became fiscal necessity.`,
+    whyItMatters: `The denarius shows how Roman war emergencies harden into Roman institutions: a crisis expedient outlived the crisis by four centuries and became the connective tissue of Mediterranean exchange. It also welded the army, the treasury, and the mines into one system — the state's solvency now ran on conquest revenue, which quietly made peace expensive and expansion self-financing. When a later age debases this coin, it will be debasing the empire's central nervous system.`,
+    control: {},
+    nonTerritorial: true,
+    spatialFocus: ['latium'],
+    connects: ['first-punic-264bce', 'cannae-216bce', 'capua-syracuse-215bce'],
+    sources: [
+      {
+        author: 'Michael Crawford',
+        work: 'Roman Republican Coinage',
+        note: 'Dated the denarius to c. 212–211 from hoard evidence, overturning the ancient literary date of 269.',
+      },
+      { author: 'Livy', work: 'Ab Urbe Condita', note: 'Scattered notices on war finance, loans, and the tributum.' },
+    ],
+  },
+  {
+    id: 'scipio-spain-209bce',
+    year: -209,
+    yearEnd: -206,
+    era: 'middle-republic',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'Scipio Takes Spain',
+    headline:
+      'A twenty-six-year-old with no qualifying office storms New Carthage in a day and strips the Barcid empire from Carthage.',
+    tags: ['military'],
+    body: `In 211 BCE the Roman position in Spain collapsed: the brothers Publius and Gnaeus Scipio, who had fought there since the war began, were defeated and killed within weeks of each other. In 210 the assembly handed the command, with proconsular power, to Publius's son — Publius Cornelius Scipio, about twenty-six years old, who had held no praetorship or consulship. It was constitutionally unprecedented, and it worked immediately. In 209 he crossed half of Spain in forced marches and took New Carthage, the Barcid capital and treasury, in a single day — sending a wading party through a coastal lagoon that dropped at low water, a fact he had quietly learned from local fishermen and publicly attributed to Neptune's favor.
+
+The sequel showed the same blend of calculation and theatre. He released the Spanish hostages held in the city to their tribes, converting Carthage's leverage into Roman patronage; the tribes began changing sides. He beat Hasdrubal Barca at Baecula in 208 — though Hasdrubal slipped away over the Pyrenees to bring Hannibal a second army, and was intercepted and killed in northern Italy in 207, his head thrown into his brother's camp. At Ilipa in 206, outnumbered, Scipio reversed his own deployment on the morning of battle and enveloped both Carthaginian wings — a maneuver with an unmistakable ancestry. By the end of 206 Carthaginian Spain, with its mines and recruiting grounds, was gone.
+
+His soldiers had hailed him imperator; Spanish tribes, he liked to report, had tried to hail him king.`,
+    whyItMatters: `Spain is where Carthage actually lost the war. Hannibal in Italy was undefeated and increasingly beside the point, because the silver and manpower that sustained Carthaginian war-making came from Iberia — and after 206 they came no longer, while Rome could finally plan an invasion of Africa. The career matters as much as the campaign: under existential pressure, Rome handed a special command to a charismatic young man outside every constitutional rule, and was rewarded for it. The Republic filed that precedent away, and the late Republic will be built out of such commands.`,
+    control: {
+      'hispania-baetica': 'contested',
+      'hispania-tarraconensis': 'contested',
+    },
+    connects: ['barcid-spain-237bce', 'cannae-216bce'],
+    sources: [
+      {
+        author: 'Polybius',
+        work: 'Histories, Book 10',
+        note: 'Drew on Scipio’s intimate friend Laelius; admiring, and openly rationalizes the Neptune story as pious stagecraft.',
+      },
+      {
+        author: 'Livy',
+        work: 'Ab Urbe Condita, Book 26',
+        note: 'Preserves the miracle version of the lagoon crossing — legend Scipio himself encouraged.',
+      },
+    ],
+  },
+  {
+    id: 'zama-202bce',
+    year: -202,
+    era: 'middle-republic',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'Zama',
+    headline:
+      'On African ground, with Numidian cavalry finally riding for Rome, Scipio beats Hannibal with Hannibal’s own playbook.',
+    tags: ['military'],
+    body: `In 204 BCE Scipio invaded Africa. Within two years he had burned the camps of Carthage's field armies in a night attack, won the battle of the Great Plains, captured the Numidian king Syphax, and installed his rival Masinissa on the Numidian throne — which meant the finest light cavalry in the world, the arm that had closed the ring at Cannae, now rode for Rome. Carthage recalled Hannibal from Italy after fifteen years. In 202, somewhere on the plains southwest of Carthage — the traditional name Zama is attached to a site no one can fix — the war's two great commanders finally met.
+
+Polybius reports a private parley the day before, Hannibal offering terms and Scipio refusing: too polished to trust entirely, too characteristic to discard. The battle itself was Scipio's answer to everything Hannibal had ever done. The eighty war elephants charged into lanes Scipio had hidden in his checkerboard of maniples and passed harmlessly through or turned back into their own lines. The infantry ground each other down at the center — Hannibal's Italian veterans nearly held — until the Roman and Numidian cavalry, having driven off their opposite numbers, returned to take the Carthaginian line from behind. It was the ending of Cannae, replayed against its author.
+
+Hannibal escaped, and told Carthage to make peace on whatever terms it could get. On the map, the contested south of Italy folded back into the Roman order, Sicily was secured for good, and Numidia entered history as Rome's first great client kingdom.`,
+    whyItMatters: `Zama's lesson is not that Rome found a better general — it is that Rome spent a decade acquiring Hannibal's own instruments: veteran infantry that could maneuver, a general allowed to keep his command year after year, and above all the Numidian cavalry whose defection decided the battle before it began. The client-kingship of Masinissa matters as long as the battle: Rome learned it could own a kingdom's foreign policy without administering an acre of it — cheap empire, and a template. The same Masinissa, licensed to harass Carthage, will eventually manufacture the third and final war.`,
+    control: {
+      etruria: 'core',
+      campania: 'core',
+      apulia: 'core',
+      'lucania-bruttium': 'core',
+      'magna-graecia': 'core',
+      sicilia: 'provincial',
+      numidia: 'client',
+    },
+    markers: [{ type: 'battle', label: 'Zama', at: [9.45, 36.3] }],
+    connects: ['scipio-spain-209bce', 'cannae-216bce', 'capua-syracuse-215bce'],
+    sources: [
+      {
+        author: 'Polybius',
+        work: 'Histories, Book 15',
+        note: 'From the Scipionic circle via Laelius; the pre-battle parley may be dramatized.',
+      },
+      { author: 'Livy', work: 'Ab Urbe Condita, Book 30' },
+    ],
+  },
+  {
+    id: 'peace-201bce',
+    year: -201,
+    era: 'middle-republic',
+    weight: 1,
+    reliability: 'well-attested',
+    title: 'The Peace That Strips Carthage',
+    headline:
+      'The peace of 201 leaves Carthage rich, disarmed, and legally forbidden to defend itself — a treaty with the next war folded inside it.',
+    tags: ['military', 'economic'],
+    body: `The terms of 201 BCE ended Carthage as a power while leaving it alive as a city. It kept its African territory but surrendered its war elephants and all but ten warships — Livy has the rest, perhaps five hundred hulls, towed out and burned in sight of the city. It owed Rome 10,000 talents over fifty years, a half-century of scheduled submission. And it accepted a clause with a long fuse: Carthage could wage no war outside Africa at all, and none inside Africa without Rome's permission — while Rome's new client Masinissa sat on its border with claims deliberately left vague.
+
+Spain was kept. The Barcid conquests became two Roman commands, formalized as the provinces of Nearer and Further Spain, with the mines that had funded Hannibal now funding Rome.
+
+Hannibal himself survived, led Carthage's civic revival as a reforming magistrate, was hounded into exile by Rome, and ended his life two decades later at a foreign court, still advising kings on how to fight Romans.`,
+    whyItMatters: `The permission clause made Carthage's right of self-defense a Roman possession, and handed Masinissa a license: every raid he made forced Carthage to choose between losing territory and breaking the treaty. The Third Punic War is already drafted in this document — it only needs fifty years and a pretext. Spain matters just as much: in keeping it, Rome acquired not a prize but an open-ended military commitment, and Spanish wars will grind Roman manpower and Roman scruples for the next seventy years.`,
+    control: {
+      'hispania-baetica': 'provincial',
+      'hispania-tarraconensis': 'provincial',
+    },
+    connects: ['zama-202bce', 'scipio-spain-209bce'],
+    sources: [
+      { author: 'Polybius', work: 'Histories, Book 15' },
+      { author: 'Livy', work: 'Ab Urbe Condita, Book 30' },
+    ],
+  },
+  {
+    id: 'slavery-captives-195bce',
+    year: -195,
+    dateNote: 'c.',
+    era: 'middle-republic',
+    weight: 1,
+    reliability: 'reconstructed',
+    title: 'War Captives Remake Roman Slavery',
+    headline:
+      'The wars begin delivering human beings by the tens of thousands, and Roman slavery changes from household fact into industrial system.',
+    tags: ['slavery', 'economic'],
+    body: `Slavery was as old as Rome; its scale was new. The Hannibalic war and the eastern wars that followed turned enslavement into a branch of military logistics: 30,000 people sold when Tarentum fell in 209, the population of Capua's territory dispersed, and — the numbing benchmark a generation later — 150,000 Epirotes enslaved in a single organized operation in 167. The figures are ancient claims, order-of-magnitude at best, but the direction is certain. Prices fell, supply became regular, and an Italian estate could be stocked with human beings the way it was stocked with tools. Traders followed the legions like a second baggage train, and piracy and slave-dealing fused into one Mediterranean business.
+
+Nobody argued against the institution — not the enslaved Greeks who wrote philosophy in Roman houses, not the Stoics, no one. Ancient debate concerned the treatment of slaves, never the legitimacy of slavery, which every Mediterranean society practiced and every war replenished. What was distinctive at Rome sat at the exit: manumission was common for urban and skilled slaves, the freed slave became a citizen, and his sons were fully Roman — a permeability Greek observers found bizarre.
+
+The destination for most captives was not the city but the land and the mines, and that concentration would remake Italy.`,
+    whyItMatters: `This is the supply line of the latifundia economy: without mass enslavement there is no plantation agriculture in Italy, no displacement anxiety around the citizen-farmer, and no Sicilian countryside packed with enough field slaves to raise rebel armies within a generation. Conquest fed slavery and slavery rewarded conquest — a loop with no internal brake, because no Roman argument existed for stopping it. The social crisis that ends this era is being assembled here, one auction at a time.`,
+    control: {},
+    nonTerritorial: true,
+    spatialFocus: ['sicilia', 'campania'],
+    misconception: {
+      claim: 'Roman slavery was racial, like Atlantic slavery — a matter of skin color and lifelong caste.',
+      correction:
+        'It was not racialized. Gauls, Greeks, Thracians, Syrians, Africans, and fellow Italians were enslaved alike; enslavement was a catastrophe of fortune, mostly military defeat. And the boundary was porous in one direction Atlantic slavery never allowed: a freed Roman slave became a citizen, and his children were indistinguishable at law from other Romans.',
+    },
+    connects: ['capua-syracuse-215bce', 'zama-202bce', 'sicilia-province-241bce'],
+    sources: [
+      { author: 'Livy', work: 'Ab Urbe Condita', note: 'Preserves the sale and enslavement notices; the numbers are unverifiable.' },
+      {
+        author: 'Keith Hopkins',
+        work: 'Conquerors and Slaves',
+        note: 'Models the demographic scale — perhaps two million slaves in Italy by the late Republic; explicit that these are estimates built on thin data.',
+      },
+    ],
+  },
+  {
+    id: 'cynoscephalae-197bce',
+    year: -200,
+    yearEnd: -197,
+    era: 'middle-republic',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'Cynoscephalae: Legion Beats Phalanx',
+    headline:
+      'In fog on a Thessalian ridge, the legion’s small units wheel onto the phalanx’s back, and Macedon’s military supremacy dies in a morning.',
+    tags: ['military'],
+    body: `In 200 BCE, months after Zama, Rome declared war on Philip V of Macedon. The assembly, exhausted by Hannibal, actually voted the war down the first time and was made to vote again — a rare glimpse of the citizenry balking at empire. The charges: Philip's opportunistic pact with Hannibal in 215, and appeals from Pergamon, Rhodes, and Athens against Macedonian aggression. In 197 the armies of Philip and Titus Quinctius Flamininus collided by accident in fog on a ridge called Cynoscephalae — "Dog's Heads" — in Thessaly, both still in marching order, a battle neither had chosen that morning.
+
+The fight became the classic demonstration of two military systems. Philip's right wing, formed and charging downhill, drove the Roman left before it — head-on, on its chosen ground, the pike phalanx was still close to invincible. But his left was caught scrambling uphill, unformed, and Roman maniples shredded it. Then an unnamed tribune took twenty maniples from the victorious Roman right and wheeled them onto the rear of Philip's advancing phalanx. Sixteen-foot pikes cannot turn around. Eight thousand Macedonians died; the legion's advantage was never frontal power but articulation — an army of small units that could think, against a single formation that could only push.
+
+At the Isthmian Games of 196 Flamininus proclaimed the freedom of the Greeks, to a roar the sources insist brought birds down from the sky, and by 194 the legions actually sailed home. Freedom, Roman-style: real, revocable, and granted from above by a patron who would be back.`,
+    whyItMatters: `The tactical lesson — flexibility beats mass — mattered less than the strategic one: two years after the most exhausting war in its history, Rome could project decisive force across the Adriatic, something no Hellenistic monarchy could have survived doing. And the settlement invented Rome's eastern method for the next half-century: win, dictate, proclaim liberty, and leave — hegemony run on obligation and gratitude instead of garrisons. The Greek world read the proclamation as liberation. It was a patron-client relationship scaled up to nations, and the patron's word was now the law of the eastern Mediterranean.`,
+    control: {},
+    markers: [{ type: 'battle', label: 'Cynoscephalae', at: [22.57, 39.42] }],
+    connects: ['zama-202bce', 'pyrrhus-280bce'],
+    sources: [
+      {
+        author: 'Polybius',
+        work: 'Histories, Book 18',
+        note: 'Includes his famous set-piece analysis of legion versus phalanx — written by a Greek explaining Greek defeat, with the moral drawn accordingly.',
+      },
+      { author: 'Plutarch', work: 'Life of Flamininus' },
+    ],
+  },
+  {
+    id: 'magnesia-190bce',
+    year: -192,
+    yearEnd: -188,
+    era: 'middle-republic',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'Magnesia and the Treaty of Apamea',
+    headline:
+      'Rome crosses into Asia for the first time, breaks the greatest king in the Greek world — and then walks away without keeping an acre.',
+    tags: ['military'],
+    body: `Antiochus III called himself "the Great" with some justice: he had marched to India and rebuilt the Seleucid empire end to end. In 192 BCE he crossed into Greece with a vanguard of ten thousand men, invited by disgruntled Aetolians, with Hannibal — exiled from Carthage — as an advisor at his court. Rome evicted him from Greece at Thermopylae in 191, and in 190 a Roman army crossed the Hellespont into Asia for the first time in history, commanded nominally by Lucius Scipio, in practice steered by his brother Africanus, serving as legate. Near Magnesia, in the winter of 190/189, Antiochus's enormous composite army — cataphracts, scythed chariots, contingents from half of Asia — came apart against the legions and Pergamene cavalry. The king's own successful cavalry charge returned to find his center gone.
+
+The Treaty of Apamea in 188 set the price of fighting Rome: 15,000 talents, the largest war indemnity of recorded antiquity; the fleet capped; the war elephants surrendered; and every Seleucid claim west of the Taurus mountains abandoned. Meanwhile the consul Manlius Vulso marched through central Anatolia hammering the Galatians, the Celtic tribes settled there, in a campaign of plunder the Senate had never authorized.
+
+Then Rome did the strange thing: it kept nothing. The legions sailed home, the liberated territory went to its allies Pergamon and Rhodes, and Anatolia became a lattice of kingdoms — Bithynia, Pontus, Cappadocia, Galatia's tribes — all now ruling on Roman sufferance. The treaty had one more clause: Hannibal, still advising the king, was to be surrendered. He fled east again, and ended his life by poison a few years later, cornered at last in Bithynia.`,
+    whyItMatters: `Apamea is empire without administration, chosen deliberately: commanding kings was cheaper than governing provinces, and for fifty years Rome ran the east through clients, arbitration, and the memory of Magnesia. The arrangement teaches what Roman power now was — not a territorial fact but a gravitational field, in which every kingdom's policy bent toward the Senate's known wishes. It also teaches why the map lags the reality: Rome rules nothing in Asia after 188 and decides everything, and when an Anatolian king later wills his kingdom to Rome, he will only be making the arrangement honest.`,
+    control: {
+      'bithynia-pontus': 'rival-hellenistic',
+      cappadocia: 'rival-hellenistic',
+      cilicia: 'rival-hellenistic',
+      galatia: 'rival-celtic',
+    },
+    markers: [{ type: 'battle', label: 'Magnesia', at: [27.43, 38.62] }],
+    connects: ['cynoscephalae-197bce', 'zama-202bce', 'peace-201bce'],
+    sources: [
+      { author: 'Polybius', work: 'Histories, Book 21' },
+      {
+        author: 'Erich Gruen',
+        work: 'The Hellenistic World and the Coming of Rome',
+        note: 'Argues Rome stumbled eastward through ad hoc responses to Greek appeals, not by design — undercutting any picture of a master plan.',
+      },
+    ],
+  },
+  {
+    id: 'pydna-168bce',
+    year: -171,
+    yearEnd: -168,
+    era: 'middle-republic',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'Pydna: Macedon Abolished',
+    headline:
+      'The phalanx shatters on rough ground at Pydna, and Rome abolishes the monarchy of Alexander’s homeland — then enslaves Epirus on the way home.',
+    tags: ['military'],
+    body: `Perseus, Philip V's son, had rebuilt Macedon's army and its standing among Greeks, and that was enough: Rome declared war in 171 BCE on pretexts thin even by Roman standards. After three years of bungling, the consul Aemilius Paullus took command, and on 22 June 168 — the date fixed by a lunar eclipse the night before — the armies met at Pydna. The phalanx's initial advance was the most frightening thing he had ever seen, Paullus admitted afterward; the wall of pikes drove the legions back toward the hills. Then the line crossed broken ground, gaps opened between its blocks, and the legionaries poured into the seams, where a sword and a big shield beat a twenty-one-foot pike at arm's length. The battle lasted about an hour. Over 20,000 Macedonians were killed and 11,000 captured; Perseus later walked in a Roman triumph and died in captivity.
+
+The settlement abolished the oldest monarchy in the Greek world. Macedon was carved into four nominally free republics, paying Rome half the old royal tax, forbidden to trade or intermarry across their new internal borders — independence designed as dismemberment. The Illyrian kingdom, Perseus's ally, was broken the same season.
+
+Then the Senate's ugliest order: on the march home in 167, Paullus's army sacked seventy towns of Epirus in a single coordinated day and enslaved 150,000 people — punishment, revenue, and warning in one operation. A thousand prominent Achaeans were deported to Italy without trial. One of them, a cavalry officer named Polybius, would spend his detention in the household of Paullus's son — and write the greatest surviving history of Rome's rise.`,
+    whyItMatters: `Pydna ends the pretense that the Hellenistic world contains independent great powers: after 168, kingship itself survives only where Rome finds it convenient. The settlement shows Roman control mutating — no longer content to win and leave, not yet willing to govern, Rome now redesigns societies from the outside, and the Epirus enslavement shows the police phase of hegemony arriving. The deportations matter for a different reason: our best source for this entire century is a hostage produced by it, writing for and around his captors — the app's clearest case of history written from inside the victor’s house.`,
+    control: {
+      macedonia: 'client',
+      epirus: 'client',
+      'illyricum-north': 'client',
+    },
+    markers: [{ type: 'battle', label: 'Pydna', at: [22.61, 40.37] }],
+    connects: ['cynoscephalae-197bce', 'magnesia-190bce'],
+    sources: [
+      {
+        author: 'Polybius',
+        work: 'Histories, Books 29–30',
+        note: 'An eyewitness to the aftermath — as one of its victims, living among its authors; his position shapes every judgment.',
+      },
+      { author: 'Livy', work: 'Ab Urbe Condita, Books 44–45' },
+      { author: 'Plutarch', work: 'Life of Aemilius Paullus' },
+    ],
+  },
+  {
+    id: 'eleusis-168bce',
+    year: -168,
+    era: 'middle-republic',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'The Day of Eleusis',
+    headline:
+      'A Roman envoy draws a circle in the sand around a king and requires an answer before he steps out of it.',
+    tags: ['military'],
+    body: `In the summer of 168 BCE, days after the news of Pydna reached Egypt, the Seleucid king Antiochus IV stood outside Alexandria with a victorious army, on the verge of swallowing the Ptolemaic kingdom. A three-man Roman embassy met him at the suburb of Eleusis. Its leader, Gaius Popillius Laenas, an ex-consul with no soldiers behind him, handed the king a tablet carrying the Senate's decree: withdraw from Egypt. Antiochus, playing for room, said he would consult his advisors. Popillius drew a circle in the dust around the king's feet with his walking stick and told him to answer before he stepped out of it.
+
+Antiochus had spent years of his youth as a hostage in Rome. He understood exactly what he was being offered: obedience, or a war with the state that had just erased Macedon. He said he would do what the Senate asked. Only then did Popillius shake his hand. The king marched his victorious army home through Judaea — where his humiliations would shortly be taken out on Jerusalem.
+
+The same season showed the method applied to friends. Rhodes, which had dared offer to mediate the Macedonian war, was punished without a declaration of anything: Rome simply made Delos a free port, and Rhodian harbor revenues collapsed. Pergamon's king, suspected of lukewarmness, was kept standing in uncertainty for years. No garrisons, no annexations — just the calibrated granting and withdrawing of favor, applied to allies and enemies alike.
+
+Polybius, who frames his whole history around the question of how Rome mastered the known world in fifty-three years, dates the completion of that mastery to this moment: the year the last independent great powers learned that a Roman letter outranked their armies.`,
+    whyItMatters: `Eleusis is naked power with the administration left out — Rome deciding the outcome of a war it was not fighting, between two kingdoms it did not rule, with one old man and a stick. A generation earlier, stopping Antiochus's father had taken the largest battle of the age; stopping the son took a sentence, because Pydna had just demonstrated the price of the alternative. The scene defines what the Mediterranean now was: a system with one veto player. The formal provinces will come later; the obedience came first.`,
+    control: {},
+    connects: ['pydna-168bce', 'magnesia-190bce'],
+    sources: [
+      {
+        author: 'Polybius',
+        work: 'Histories, Book 29',
+        note: 'Near-contemporary and well-placed; the scene is likely polished in the telling, as perfect anecdotes usually are.',
+      },
+      { author: 'Livy', work: 'Ab Urbe Condita, Book 45' },
+    ],
+  },
+  {
+    id: 'greek-absorption-160bce',
+    year: -160,
+    dateNote: 'c.',
+    era: 'middle-republic',
+    weight: 1,
+    reliability: 'well-attested',
+    title: 'Captive Greece Captures Rome',
+    headline:
+      'Rome conquers the Greek world and is colonized by it in return — tutors, libraries, marble, and philosophy arriving as war booty.',
+    tags: ['culture'],
+    body: `The loot came first. Marcellus's Syracusan spoils in 211 introduced Rome to Greek art as a prize category; Fulvius Nobilior carted off the Muses of Ambracia; Aemilius Paullus, ostentatiously refusing Macedon's treasure, kept only Perseus's royal library — for his sons. Then came the people: Greek tutors, doctors, artists, and educated captives, plus a thousand Achaean hostages including Polybius. Within a generation the Roman elite was bilingual, and its sons were being trained in Greek rhetoric and philosophy as a matter of course.
+
+The friction was public theatre. In 155 Athens sent three philosophers as ambassadors; one of them, Carneades, lectured on justice one day and refuted himself the next, and Cato the Elder pushed the Senate to settle their business and get them out of the city before they finished corrupting the young. Cato's hostility was itself a performance — his own prose is salted with Greek learning. The fight was never really for or against Greek culture; it was over who would control the absorption, and on what terms a Roman could be cultivated without ceasing to be Roman. Latin literature itself was born inside the process: its first monument was a translation of the Odyssey.
+
+Horace later compressed it into a famous line: captive Greece took her rough conqueror captive.`,
+    whyItMatters: `The culture that will later Romanize Gaul and Spain is being assembled here, and it is a hybrid from the foundry: Greek forms, Latin language, Roman purposes. That matters causally — Rome could rule the Greek east for centuries partly because its elite had made Greek culture its own rather than suppressing it. And the anxiety on display, that conquest imports the conqueror's undoing, becomes a permanent Roman register: the debate about decadence starts as a debate about Greece.`,
+    control: {},
+    nonTerritorial: true,
+    spatialFocus: ['latium', 'achaea'],
+    connects: ['pydna-168bce', 'cynoscephalae-197bce', 'capua-syracuse-215bce'],
+    sources: [
+      {
+        author: 'Plutarch',
+        work: 'Life of Cato the Elder',
+        note: 'The anecdotes are moralized set-pieces; Cato the Greek-hater is partly Cato’s own self-marketing.',
+      },
+      { author: 'Horace', work: 'Epistles 2.1' },
+      { author: 'Erich Gruen', work: 'Culture and National Identity in Republican Rome' },
+    ],
+  },
+  {
+    id: 'viriathus-147bce',
+    year: -147,
+    yearEnd: -139,
+    era: 'middle-republic',
+    weight: 1,
+    reliability: 'contested',
+    title: 'Viriathus and the Lusitanian War',
+    headline:
+      'A shepherd who survived a Roman massacre spends eight years humiliating consular armies — until Rome bribes his own envoys to kill him in his sleep.',
+    tags: ['military'],
+    body: `In 150 BCE the praetor Servius Sulpicius Galba ended a Lusitanian war by promising the tribes land, dividing the disarmed families into three groups, and massacring or enslaving them. Prosecuted at Rome, he paraded his weeping children before the assembly and was acquitted. Among the survivors of his massacre was a shepherd named Viriathus, and from 147 he made Rome pay for the acquittal: he lured a praetor's army into a defile and destroyed it, then beat or humiliated a string of Roman commanders across eight years of ambush and evasion — warfare Rome's legions were never built for, on ground they never controlled.
+
+By 140 he had trapped a consular army completely enough to dictate terms: a treaty, ratified at Rome, recognizing him as a friend of the Roman people. The next consul, Servilius Caepio, got the Senate to repudiate it, reopened the war, and solved it with money: three of Viriathus's own envoys, bribed, stabbed him in his sleep. The tale that Caepio then refused them their reward — Rome does not pay traitors — is a later moralist's bow on the story. The resistance collapsed, and Lusitania was brought under Roman arms.
+
+Our fullest account, Appian's, was written three centuries later and paints Viriathus as the noble bandit — the barbarian more honorable than his conquerors. The portrait is a literary type; the defeats it catalogs were real.`,
+    whyItMatters: `Spain shows what the empire looks like where the east's elegant hegemony runs out — facing peoples with no cities to threaten and nothing to lose, Roman method degrades to massacre, repudiated treaties, and assassination, and Roman audiences noticed: the era's own historians tell these stories as indictments. The grind mattered at home too. The Spanish levy became the most hated obligation in Roman life, and the citizen-army's willingness to serve — the Republic's foundation — began cracking in these hills a generation before anyone named the crisis.`,
+    control: { lusitania: 'provincial' },
+    connects: ['peace-201bce', 'scipio-spain-209bce'],
+    sources: [
+      {
+        author: 'Appian',
+        work: 'Iberike',
+        note: 'Written c. 300 years later from lost sources; the noble-savage portrait of Viriathus is a literary convention as much as a memory.',
+      },
+      { author: 'Livy', work: 'Periochae 52–54', note: 'Bare late summaries of lost books.' },
+    ],
+  },
+  {
+    id: 'numantia-143bce',
+    year: -143,
+    yearEnd: -133,
+    era: 'middle-republic',
+    weight: 1,
+    reliability: 'well-attested',
+    title: 'Numantia',
+    headline:
+      'A Celtiberian hill town of a few thousand defies Rome for a decade, wrecks armies and treaties, and is finally starved into annihilation.',
+    tags: ['military'],
+    body: `Numantia, a Celtiberian stronghold on the upper Duero with a few thousand inhabitants, became the graveyard of Roman reputations. The worst came in 137 BCE: the consul Mancinus, surrounded with 20,000 men, saved his army by a treaty negotiated through his quaestor — a young aristocrat named Tiberius Gracchus, whose family name the Numantines trusted. The Senate repudiated the treaty and, to cancel the oath, handed Mancinus back to Numantia naked and bound. The Numantines refused to take him. Every party to the deal was humiliated except the town.
+
+Rome finally sent Scipio Aemilianus, the destroyer of Carthage, re-elected consul for the purpose in 134. He would not fight Numantines; he fought the campaign's rot instead, expelling the traders, prostitutes, and soothsayers from a demoralized camp and drilling it back into an army. Then he sealed the town inside seven forts and nine kilometers of wall and waited. Through the winter Numantia starved; the sources report cannibalism at the end. In summer 133 the survivors surrendered or killed themselves; the town was razed and its people sold. The Meseta was organized under Roman arms.
+
+The same year, at Rome, the tribune Tiberius Gracchus — the man whose Numantine treaty the Senate had torn up — was about to force a different crisis.`,
+    whyItMatters: `Numantia measures the cost of empire in the currency Rome could least afford: legitimacy and manpower. A town of thousands absorbed the hegemon of the Mediterranean for a decade because Roman conscripts hated Spanish service — the levy met open resistance at Rome in these years — and because the Senate burned its own credibility repudiating treaties its armies' survival had bought. The men radicalized here matter most: the era of Mediterranean conquest closes with its greatest soldier besieging a village, and its next era opens with his humiliated quaestor deciding the system itself needed forcing.`,
+    control: { 'hispania-interior': 'provincial' },
+    connects: ['viriathus-147bce', 'peace-201bce'],
+    sources: [
+      {
+        author: 'Appian',
+        work: 'Iberike',
+        note: 'Drawn largely from Polybius, who was at Numantia with Scipio — an eyewitness core inside a late text.',
+      },
+      { author: 'Plutarch', work: 'Life of Tiberius Gracchus', note: 'For the Mancinus affair and its effect on Gracchus.' },
+    ],
+  },
+  {
+    id: 'publicani-140bce',
+    year: -140,
+    dateNote: 'c.',
+    era: 'middle-republic',
+    weight: 1,
+    reliability: 'reconstructed',
+    title: 'Tax Farming and the Publicani',
+    headline:
+      'Rome runs an empire with no revenue service, so it auctions the right to collect taxes to private companies — and creates a lobby that profits from conquest.',
+    tags: ['economic', 'legal'],
+    body: `The Roman state conquered the Mediterranean without ever building a revenue bureaucracy. Instead, every five years the censors auctioned public business to private contractors: collecting the Sicilian tithe, supplying armies in Spain, running the state's mines, building its roads and temples. The contractors — publicani — organized into companies with tradable shares, the closest thing antiquity produced to corporations, and they were as old as the wars: during the Hannibalic emergency, supply contractors were already defrauding the state, staging shipwrecks of cargoes that existed only on paper.
+
+The incentive structure wrote itself. A company that bid high for a tax contract recouped by squeezing, and a governor who objected was interfering with Roman citizens' lawful profits. Provincial victims had exactly one remedy after 149, when the lex Calpurnia created a standing extortion court — Rome's first permanent criminal court, a genuine landmark of law — where provincials could sue former governors before a jury of the governors' peers. They rarely won.
+
+Behind the companies stood a class: rich Romans outside the Senate — senators were barred from state contracts and large-scale shipping by a law of 218 — who became the equestrian order's financial wing, organized, self-aware, and structurally invested in empire.`,
+    whyItMatters: `Privatized extraction gave Roman expansion a domestic constituency with a balance sheet — from here on, wars, annexations, and provincial policy all have a lobby whose profit scales with them. It also built the fault line the late Republic will crack along: publicani wanted provinces squeezed, senatorial governors wanted them squeezable but orderly, and the courts became the battlefield between the two richest classes in the state. When the wealth of Asia is eventually thrown open to the tax contracts, the machine assembled in Sicily and Spain will be waiting, and its political weight will help bend the Republic.`,
+    control: {},
+    nonTerritorial: true,
+    spatialFocus: ['sicilia', 'asia'],
+    connects: ['sicilia-province-241bce', 'denarius-211bce', 'peace-201bce'],
+    sources: [
+      { author: 'Livy', work: 'Ab Urbe Condita, Book 25', note: 'The wartime supply-fraud scandal — the earliest documented procurement fraud.' },
+      {
+        author: 'Cicero',
+        work: 'In Verrem',
+        note: 'The richest surviving picture of provincial extraction, but a prosecutor’s brief written a century after this period.',
+      },
+      { author: 'Ernst Badian', work: 'Publicans and Sinners' },
+    ],
+  },
+  {
+    id: 'third-punic-149bce',
+    year: -149,
+    yearEnd: -146,
+    era: 'middle-republic',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'The Third Punic War',
+    headline:
+      'Cato ends every speech demanding Carthage’s destruction; Rome manufactures the pretext and delivers a demand no city could accept.',
+    tags: ['military'],
+    body: `By the 150s BCE Carthage was rich again and militarily nothing — its indemnity paid off in 151, its foreign policy still legally Rome's property under the treaty of 201. Masinissa, Rome's Numidian client, understood the arrangement perfectly and raided Carthaginian territory for decades, knowing every Carthaginian appeal to Rome would be judged in his favor. Cato the Elder, sent to arbitrate around 153, came home alarmed by Carthage's prosperity; he displayed a fresh African fig to the Senate — three days' sail away, he said — and began closing every speech, on any subject, with the demand that Carthage be destroyed. The canonical Latin tag, Carthago delenda est, is a later distillation, but the refrain itself is well attested. Scipio Nasica ended his own speeches with the opposite: Carthage should stand, because fear of a rival kept Rome disciplined.
+
+In 150 Carthage finally fought back against Masinissa — war without Roman permission, and the pretext was complete. The consuls landed in 149, and Rome negotiated like a cat with a bird: Carthage surrendered 300 noble children as hostages, then its entire arsenal — the Roman figures say 200,000 sets of arms and 2,000 catapults. Then came the final demand, held back until the city was disarmed: abandon Carthage entirely and rebuild at least ten miles from the sea. For a maritime city, a death sentence. Carthage chose to fight, three years of siege behind walls, forging new weapons from scratch — the sources say the women gave their hair for torsion springs.
+
+In 147 the command went to Scipio Aemilianus, elected consul below the legal age by popular demand. He sealed the harbor with a mole, and in the spring of 146 the assault went in.`,
+    whyItMatters: `This is a war decided entirely in Rome, against an enemy that could not threaten it — driven by Cato's generation's memory of Hannibal, by Masinissa's licensed provocations, and by the treaty of 201, whose permission clause was engineered to be broken. It matters as the clearest early case of Roman preventive annihilation: the security logic of empire turning a disarmed dependent into an existential threat by argument alone. The Nasica counter-position matters too — the idea that Rome needed an enemy to stay virtuous was being argued before the walls fell, which is why the moral reckoning after 146 starts immediately.`,
+    control: { 'africa-proconsularis': 'contested' },
+    connects: ['peace-201bce', 'zama-202bce'],
+    sources: [
+      {
+        author: 'Appian',
+        work: 'Punica',
+        note: 'Preserves the narrative of Polybius, who watched the siege at Scipio’s side — an eyewitness core in a much later text.',
+      },
+      { author: 'Richard Miles', work: 'Carthage Must Be Destroyed' },
+    ],
+  },
+  {
+    id: 'carthage-corinth-146bce',
+    year: -146,
+    era: 'middle-republic',
+    weight: 3,
+    reliability: 'well-attested',
+    title: 'Carthage and Corinth Destroyed',
+    headline:
+      'In one year Rome erases two of the Mediterranean’s oldest cities — and its own leaders immediately begin arguing about what the victory has done to the victors.',
+    tags: ['military', 'culture'],
+    body: `In the spring of 146 BCE the Romans broke into Carthage's harbor district, and the end took six days and nights of street fighting, house by house, up the slope to the citadel of Byrsa, with buildings burned and pulled down onto their defenders as the assault climbed. Perhaps 50,000 survivors came out to be enslaved, a remnant of a city of hundreds of thousands. The wife of the last commander, Hasdrubal, cursed her husband for surrendering and stepped into the flames with her children — the scene is Appian's, too operatic to verify, preserved because Romans themselves kept retelling it. The city burned for seventeen days, was razed, and its territory became the province of Africa. Months later, at the other end of the sea, Lucius Mummius stormed Corinth — the richest city of Greece — after the Achaean League's hopeless little war: the men were killed, the women and children sold, and centuries of art went to Italy in bulk. Two of the oldest cities in the Mediterranean, erased in a single campaigning season, by policy.
+
+Polybius stood beside Scipio Aemilianus and watched Carthage burn, and recorded what the general did: he wept, quoted Homer's lines on the inevitable fall of Troy, and said that his fear was for Rome, someday. Whether the tears were felt or performed, their preservation is the point — the victors began moralizing the victory at the moment of victory.
+
+Mummius became the Senate's joke instead: the new man who supposedly told his shipping contractors that any masterpiece lost in transit would have to be replaced. The sneer was easier than the question underneath — Rome was now the warehouse of Greek civilization, and had acquired it by demolition.
+
+The map consolidated accordingly. Africa and Macedonia — the latter annexed after a pretender's revolt in 148, with Greece attached to its governor's watch — became provinces; the era of winning and leaving was over. In the same generation, northern Italy ceased to be a frontier: colonies like Aquileia, roads like the Via Postumia, and relentless settlement made Cisalpine Gaul, Liguria, and the Venetic lands effectively Italian, and the peninsula now ran to the Alps.
+
+Sallust, writing in the next century's wreckage, put Rome's moral break exactly here: while Carthage stood, fear of the enemy — metus hostilis — kept Rome honest, and after 146 ambition and greed came off the leash. Modern historians distrust the mechanism, but the chronology keeps the question alive: thirteen years separate this triumph from the year Roman politics turned murderous.`,
+    whyItMatters: `146 is the hinge where hegemony becomes administration — two provinces annexed in one year ends the half-century policy of commanding the Mediterranean without governing it, and the empire of magistrates, taxes, and publicani begins in earnest. But its deeper importance is the argument it started inside the winners: the idea that this victory had removed the fear that disciplined the state was contemporary analysis, argued in the Senate before the war and canonized by Sallust after. The Roman debate about decline — luxury, greed, the corrupting east — begins here, among the conquerors at their apex, a full century before the emperors. Rome's critique of empire is exactly as old as Rome’s empire.`,
+    misconception: {
+      claim: 'The Romans sowed Carthage’s ground with salt so nothing would ever grow there.',
+      correction:
+        'No ancient source says this — the salting is a modern embellishment that crept into scholarship in the nineteenth and twentieth centuries. The site was cursed and left derelict, but the land was some of the best in Africa and Rome farmed it; a century later Rome itself refounded Carthage as a colony, and it grew into one of the empire’s greatest cities.',
+    },
+    control: {
+      'africa-proconsularis': 'provincial',
+      macedonia: 'provincial',
+      achaea: 'provincial',
+      epirus: 'provincial',
+      cisalpina: 'core',
+      liguria: 'core',
+      venetia: 'core',
+    },
+    markers: [
+      { type: 'siege', label: 'Carthage', at: [10.32, 36.85] },
+      { type: 'siege', label: 'Corinth', at: [22.93, 37.94] },
+    ],
+    connects: ['third-punic-149bce', 'pydna-168bce', 'eleusis-168bce'],
+    sources: [
+      {
+        author: 'Appian',
+        work: 'Punica',
+        note: 'Preserves Polybius’s eyewitness account, including the Scipio scene — transmitted, and possibly improved, across three centuries.',
+      },
+      {
+        author: 'Sallust',
+        work: 'The Conspiracy of Catiline',
+        note: 'The metus hostilis theory of decline — written a century later, amid civil war, by a moralist reading his own age backward into 146.',
+      },
+      { author: 'Richard Miles', work: 'Carthage Must Be Destroyed' },
+    ],
+  },
+  {
+    id: 'latifundia-crisis-180bce',
+    year: -200,
+    yearEnd: -130,
+    dateNote: 'c.',
+    era: 'middle-republic',
+    weight: 3,
+    reliability: 'reconstructed',
+    title: 'Latifundia and the Shrinking Census Class',
+    headline:
+      'While Rome conquers the Mediterranean, war capital and slave labor rework the Italian countryside — and Romans come to believe the citizen-farmer who wins their wars is being destroyed by them.',
+    tags: ['economic', 'slavery', 'social'],
+    body: `Across the two generations after Hannibal, the profits of conquest were plowed into Italian land, because land was the only investment a Roman senator could respectably hold at scale. The ingredients were all war products: indemnity silver and booty seeking a home; slaves cheap and abundant from the eastern wars; vast tracts of ager publicus — public land confiscated from the Italian communities that had joined Hannibal — available to whoever occupied it; and a legal cap of 500 iugera on such occupation, on the books since 367 and ignored by everyone who mattered. The result was the latifundia: ranches and plantation estates worked by slave gangs, run for profit. Cato the Elder's surviving farming manual, written around 160, is the era's ledger-book conscience — crops ranked by return, equipment inventoried down to the last basket, and the advice to sell off the old ox, the sickly sheep, and the old or sickly slave.
+
+The story Romans told about what this did comes through Plutarch and Appian: the smallholder, conscripted for years in Spain, returns to a farm absorbed or ruined and gives up; the rich engross the land; the census rolls of assidui — citizens propertied enough for the legions — shrink until the state must repeatedly lower the qualification; the free poor drift to Rome. The emblematic scene has Tiberius Gracchus traveling through Etruria in the 130s and finding barbarian slave gangs where citizen-farmers should have been — a scene that reaches us from his brother's political pamphlet.
+
+Modern scholarship has audited the story and found it softer than it looks. Field-survey archaeology keeps finding small farms all over second-century Italy; the falling census numbers may partly record evasion — registration meant liability for the levy and the tax — rather than disappearance; and it has been argued in detail that military service was more survivable for family farms than the tradition claims. The safest version: real slave estates and real displacement, concentrated in particular regions, inflated by politics into a national story of the dying yeoman.
+
+What is not soft is what the concentration of slaves did where it was real. In 135 the Sicilian countryside rose in the first great slave war — a rebel kingdom of tens of thousands of estate slaves, holding out for years in the island that fed Rome. And the manpower arithmetic frightened the elite on its own terms: legionaries had to own property, the propertyless could not legally serve, and the machine that had beaten Hannibal ran on a class the Romans believed was evaporating.`,
+    whyItMatters: `This is the root system of the late Republic, and the crucial mechanism is belief: whether or not the smallholder was literally vanishing, the conviction that conquest was devouring the citizen-soldier became the operating assumption of Roman politics. It hands the Gracchi their cause and their moral license; it frames the land question so that every ambitious politician for a century must take a side; and it points directly at the eventual solution — recruit the propertyless and let their generals provide for them — that converts Rome's armies into private followings. The Republic was not killed by one villain but by this arithmetic, and Rome's first political murders will come, thirteen years after Carthage fell, over exactly this land.`,
+    misconception: {
+      claim: 'Cheap slave labor wiped out Italy’s small farmers, who all fled to Rome as a landless mob.',
+      correction:
+        'The ancient sources say so; the archaeology disagrees. Survey evidence shows small farms persisting across second-century Italy, and the shrinking census may partly reflect citizens dodging registration rather than losing land. The displacement was real but regional and partial — what swept Rome was the story, which was believed, weaponized, and acted upon as if it were total.',
+    },
+    control: {},
+    nonTerritorial: true,
+    spatialFocus: ['etruria', 'campania', 'sicilia'],
+    connects: ['licinio-sextian-367bce', 'farming-soldier-350bce', 'zama-202bce'],
+    sources: [
+      {
+        author: 'Cato the Elder',
+        work: 'De Agricultura',
+        note: 'A contemporary estate manual — the slave economy described from the owner’s side, in cold bookkeeping prose.',
+      },
+      {
+        author: 'Appian',
+        work: 'Civil Wars, Book 1',
+        note: 'The classic narrative of smallholder decline, written 250+ years later and shaped by Gracchan advocacy.',
+      },
+      {
+        author: 'Nathan Rosenstein',
+        work: 'Rome at War',
+        note: 'Argues military service did not ruin family farms as the tradition claims — directly undercutting the story this event narrates.',
+      },
+    ],
+  },
+];

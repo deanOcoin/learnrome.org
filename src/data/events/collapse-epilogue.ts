@@ -1,0 +1,652 @@
+// 395-476 CE plus the epilogue to 1453. deltas are copied from manifest D, change them there first
+
+import type { RomeEvent } from '../../types';
+
+export const COLLAPSE_EPILOGUE_EVENTS: RomeEvent[] = [
+  {
+    id: 'stilicho-395ce',
+    year: 395,
+    yearEnd: 408,
+    era: 'collapse',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'Stilicho Holds the West',
+    headline: 'For thirteen years the western empire is one general and his network — and when the court executes him, thirty thousand of his soldiers march to Alaric.',
+    tags: ['military', 'succession'],
+    body: `For thirteen years the western empire was, in practice, one man. Flavius Stilicho — son of a Vandal cavalry officer and a Roman mother, married into the imperial family — was left as guardian of the ten-year-old emperor Honorius when Theodosius died in 395, and ran the west as its supreme commander. He fought Alaric's Goths to a standstill twice in Italy, at Pollentia in 402 and Verona in 403; he annihilated Radagaisus's enormous invasion force outside Florence in 406; and he did it all with an army so thin that he stripped the Rhine garrisons to keep Italy covered. In 408 the court at Ravenna turned on him. Accused of scheming to put his own son on a throne, he took sanctuary in a church, then walked out and submitted to the executioner without resistance. What followed was the real catastrophe: Roman soldiers massacred the wives and children of the empire's barbarian federate troops in the towns of Italy, and something like thirty thousand of those troops went over to Alaric.
+
+Stilicho's position had no constitutional name. He claimed Theodosius had entrusted him with both young emperors, east and west — a claim Constantinople rejected so completely that it twice declared him a public enemy. His authority rested on the army, on his marriage ties to the dynasty, and on relentless publicity: the court poet Claudian turned every campaign into an epic, which is why we see Stilicho mostly through his own press office.
+
+His Gothic policy was the charge that killed him. He fought Alaric repeatedly but never destroyed him, preferring to keep the Goths in reserve as hired force — for a planned seizure of Illyricum, or as a counterweight to Constantinople. In 407 he had the Senate vote Alaric four thousand pounds of gold; one senator protested that this was not peace but a pact of servitude. To the purists at court, half-Vandal generalissimo and subsidized Goth looked like two halves of one betrayal.
+
+The coup, led by the palace official Olympius, replaced military arithmetic with ideological purity. Within eighteen months Alaric — his ranks swollen with the massacre's survivors — was outside Rome.`,
+    whyItMatters: `The lesson of 408 is structural, not personal. The defense of the west had contracted into a single commander's patronage network, so destroying the commander did not return power to the emperor — it delivered a trained army to the enemy. The court chose purity over arithmetic and paid with the sack of Rome within two years. And it set the pattern the west never escaped: an indispensable generalissimo, a jealous court, an execution, a disaster — Stilicho in 408, Aetius in 454, each followed almost immediately by a sack of Rome. A state that must kill its own defenders to feel sovereign has already lost the thing it is defending.`,
+    control: {},
+    connects: ['theodosius-division-395ce', 'foederati-382ce', 'adrianople-378ce'],
+    sources: [
+      { author: 'Claudian', work: 'Panegyrics and De Consulatu Stilichonis', note: 'Stilicho\'s own court poet — brilliant, contemporary, and pure propaganda for his employer.' },
+      { author: 'Zosimus', work: 'New History', note: 'Hostile pagan historian writing a century later; blames Christian emperors for everything, but preserves the massacre and defection figures.' },
+      { author: 'Peter Heather', work: 'The Fall of the Roman Empire', note: 'Reads Stilicho less as a failed traitor than as a man managing an insoluble two-front problem with one army.' },
+    ],
+  },
+
+  {
+    id: 'rhine-crossing-406ce',
+    year: 406,
+    dateNote: 'December 31, traditional',
+    era: 'collapse',
+    weight: 3,
+    reliability: 'well-attested',
+    title: 'The Rhine Crossing',
+    headline: 'Vandals, Alans, and Sueves cross the Rhine at Mainz — and this time, no Roman army ever comes to restore the frontier.',
+    tags: ['military'],
+    body: `On the traditional date of December 31, 406, mixed columns of Vandals, Alans, and Sueves crossed the Rhine near Mogontiacum — Mainz — and the frontier that had held, with interruptions, for over four centuries stopped existing. Mainz was sacked, then Worms, Trier, Reims, Amiens; Jerome, writing from Bethlehem, ran through the ruined cities of Gaul like a funeral list. For roughly three years the invaders plundered across Gaul with no field army to meet them, because the army that should have met them had been pulled back to defend Italy. Every previous breach of the Rhine in Roman history had ended the same way: a Roman counteroffensive and a restored line. This one was never repaired. That is the whole significance of the date.
+
+The crossers were not a single people and not an army with a war aim. The Hasding and Siling Vandals were Germanic agriculturalists long settled beyond the frontier; the Alans were Iranian-speaking horsemen pushed off the steppe; the Sueves a smaller Germanic grouping. The best explanation for why they moved together, in winter, with families and wagons, is pressure from behind — the expanding Hunnic power was making central Europe unlivable for peoples who could see, across the river, a rich and suddenly undefended empire. They came to take a share of it, not to end it.
+
+Two famous details deserve suspicion. The frozen river that every retelling includes appears in no ancient source; Edward Gibbon supposed the Rhine "most probably" froze, and the guess hardened into fact. And the date itself hangs on a single line in Prosper of Aquitaine's chronicle; the historian Michael Kulikowski has argued the crossing better fits 405. The event is certain. Its most cinematic details are not.
+
+The cascade began at once. The army of Britain, watching Gaul burn and Ravenna do nothing, raised its own emperors; the last of them, Constantine III, crossed to Gaul in 407 and took Britain's remaining field troops with him. The cities of Gaul were left to their walls. And in 409 the migrating peoples moved on across the Pyrenees, toward Spain and, eventually, Africa.
+
+Note what did not happen: a battle. Stilicho's one field army was finishing Radagaisus and watching Alaric; it could be in one place at a time, and that place was Italy. The west did not lose the Rhine in a defeat. There was no one at the river.`,
+    whyItMatters: `Permanence, not violence, is what makes 406 a hinge. Frontier breaches were survivable and had been survived for centuries; what the west could no longer do was pay for the counteroffensive that repair required. Every major western kingdom of the next seventy years walks through this gap — the Vandal seizure of Africa in 429, the event most likely to have actually killed the western empire, is this crossing's direct descendant. One night on the Rhine did not doom Rome; the inability to answer it did, because it converted the tax-paying provinces of Gaul and Spain into war zones, and a state that loses its revenue loses its army, and then loses everything else on schedule.`,
+    misconception: {
+      claim: 'The barbarians crossed the frozen Rhine on foot in one dramatic night.',
+      correction: 'No ancient source mentions ice — the frozen river is Gibbon\'s eighteenth-century conjecture, repeated until it became fact. Even the date rests on one chronicle line, and some historians argue for 405. What is certain is the consequence: the crossing was never reversed.',
+    },
+    control: {
+      'gallia-belgica': 'contested',
+      'gallia-lugdunensis': 'contested',
+      'gallia-aquitania': 'contested',
+      'germania-inferior': 'lost',
+      'germania-superior': 'lost',
+    },
+    markers: [{ type: 'disaster', label: 'Mogontiacum', at: [8.27, 50.0] }],
+    connects: ['stilicho-395ce', 'theodosius-division-395ce', 'goths-admitted-376ce'],
+    sources: [
+      { author: 'Prosper of Aquitaine', work: 'Epitoma Chronicon', note: 'The date rests on a single terse entry; a contemporary, but a chronicler, not a narrator.' },
+      { author: 'Jerome', work: 'Letter 123', note: 'A rhetorical lament written from Bethlehem, cataloguing sacked cities for effect — grief, not reportage.' },
+      { author: 'Michael Kulikowski', work: 'Rome\'s Gothic Wars and related articles', note: 'Argues the crossing belongs to 405 and that the neat New Year\'s Eve date is a modern convenience.' },
+    ],
+  },
+
+  {
+    id: 'vandals-spain-409ce',
+    year: 409,
+    era: 'collapse',
+    weight: 1,
+    reliability: 'well-attested',
+    title: 'The Peoples Cross into Spain',
+    headline: 'Vandals, Alans, and Sueves cross the unguarded Pyrenees and, two years later, divide the Spanish provinces among themselves by lot.',
+    tags: ['military'],
+    body: `In the autumn of 409 the Vandals, Alans, and Sueves crossed the Pyrenees — the passes left open or betrayed amid the civil wars of the usurper Constantine III — and spilled into Spain, a diocese that had known almost no war for four centuries. After two years of plundering, the chronicler Hydatius records something stranger than conquest: in 411 they divided the provinces among themselves by lot, like heirs partitioning an estate. The Sueves and Hasding Vandals took Gallaecia in the northwest, the Alans took Lusitania and Carthaginiensis, the Siling Vandals took the rich south, Baetica. The imperial government was neither consulted nor capable of contesting the draw.
+
+Hydatius, a bishop in Gallaecia who lived through it, writes in an apocalyptic key — famine, plague, the four scourges of the world. Beneath the rhetoric the process is visible: Roman provincial society did not fall in battle so much as discover that the state whose taxes it paid could no longer reach it.`,
+    whyItMatters: `The lottery is the detail worth keeping, because it shows the mechanics of imperial loss. Nothing was formally ceded and no treaty was signed; the writ of Ravenna simply stopped at the Pyrenees, and other people organized what lay beyond. Spain also stages the next and far worse act — it is from Baetica, twenty years later, that the Vandals will cross to Africa, the province the west cannot lose and keeps losing anyway.`,
+    control: {
+      'hispania-baetica': 'contested',
+      'hispania-interior': 'contested',
+      'lusitania': 'contested',
+      'gallia-belgica': 'lost',
+    },
+    connects: ['rhine-crossing-406ce', 'stilicho-395ce'],
+    sources: [
+      { author: 'Hydatius', work: 'Chronicle', note: 'A contemporary eyewitness in Gallaecia, but writing in a deliberately apocalyptic register; the neat "by lot" may compress messier bargaining.' },
+      { author: 'Peter Heather', work: 'The Fall of the Roman Empire', note: 'Emphasizes that the invaders sought land and income within the Roman world, not its destruction.' },
+    ],
+  },
+
+  {
+    id: 'britain-exit-410ce',
+    year: 410,
+    era: 'collapse',
+    weight: 2,
+    reliability: 'contested',
+    title: 'Britain Leaves the Empire',
+    headline: 'Told by Honorius to look to their own defense — if the letter even concerns them — the cities of Britain simply stop being Roman.',
+    tags: ['military'],
+    body: `Britain did not fall to an invader and was not evacuated. Between 406 and 407 its restless army raised three usurpers in a year; the last, Constantine III, crossed to Gaul and took most of Britain's remaining field troops with him, chasing an imperial title. In 409, according to the historian Zosimus, the Britons — under Saxon raids and getting nothing from anyone — expelled the Roman officials themselves and armed their own defense. Then comes the famous document: a rescript of the emperor Honorius, dated 410, telling the cities of Britain to see to their own protection. No legion marched to the ships. There was no withdrawal to withdraw. A province of three and a half centuries simply exited the empire, and the empire barely recorded it.
+
+Even the letter is doubtful. It appears in Zosimus amid material about Italy, and some scholars argue the text originally concerned Brettia or Bruttium — the toe of Italy — mangled in transmission into Britain. If genuine, it granted nothing; it ratified a separation already accomplished from the British side.
+
+What the texts blur, archaeology states plainly. Shipments of new coin to Britain stop around 402 — meaning the army and administration stopped being paid. Within a generation the industrial potteries fail, villa building ceases, towns shrink inside their walls. Gildas, writing more than a century later, tells a story of groaning Britons and departing legions, but he is preaching a sermon about sin, not writing history. What actually left Britain was not soldiers. It was the fiscal system — pay, coin, taxes, markets — and everything built on it followed.`,
+    whyItMatters: `Britain is the control experiment for the whole century: remove the Roman state cleanly, with no conquering successor kingdom, and watch what happens. What happens is material collapse — coinage, wheel-thrown pottery, urban life, and literacy all recede within decades, faster and further than anywhere on the continent. This is Ward-Perkins's favorite exhibit against the gentler "transformation" reading of the era: Rome was not just a flag over daily life but an economic system, and systems can simply stop. When people debate whether the fall of Rome mattered to ordinary people, Britain is the strongest evidence that it could matter totally.`,
+    misconception: {
+      claim: 'In 410 Rome withdrew its legions from Britain to defend Italy.',
+      correction: 'There was no evacuation. The troops had already left piecemeal with a string of usurpers by 407, and in 409 the Britons expelled the remaining Roman officials themselves. The famous letter of Honorius — which may not even refer to Britain — only acknowledged a separation that had already happened.',
+    },
+    control: {
+      'britannia-south': 'lost',
+    },
+    connects: ['rhine-crossing-406ce', 'britain-43ce', 'stilicho-395ce'],
+    sources: [
+      { author: 'Zosimus', work: 'New History', note: 'The sole source for the rescript; the passage sits oddly in its context, and "Britain" may be a corruption of Bruttium in Italy.' },
+      { author: 'Gildas', work: 'On the Ruin of Britain', note: 'Written some 130 years later as a moral sermon; vivid, influential, and nearly useless as chronology.' },
+      { author: 'Bryan Ward-Perkins', work: 'The Fall of Rome and the End of Civilization', note: 'Uses post-Roman Britain\'s archaeology as the sharpest case that the end of empire meant real material collapse.' },
+    ],
+  },
+
+  {
+    id: 'alaric-sack-410ce',
+    year: 410,
+    era: 'collapse',
+    weight: 3,
+    reliability: 'well-attested',
+    title: 'Alaric Sacks Rome',
+    headline: 'A Gothic king who wanted a Roman job takes the city no enemy had entered in eight hundred years — and the shock forces Augustine to rethink history itself.',
+    tags: ['military', 'religious'],
+    body: `On August 24, 410, Alaric's Goths entered Rome through the Salarian Gate and plundered the city for three days. Militarily it decided almost nothing: the court sat safe behind the marshes of Ravenna, and the empire's armies were not in the city. Psychologically it was seismic. Rome had not fallen to an enemy since the Gauls sacked it exactly eight centuries before; it was the city that took the world, and now — as Jerome wrote from his cell in Bethlehem — the city that had captured the whole world was itself captured. Pagans said the ancient gods, newly banned, had withdrawn their protection. To answer them, Augustine of Hippo began writing City of God, and Christian thought acquired its first full philosophy of history.
+
+The road to the gate matters more than the three days inside it. Alaric was no alien destroyer: he had commanded Gothic troops for the empire, and what he wanted — through a decade of alternating service and blackmail — was a senior Roman command, and land and subsidies for his people. After Stilicho's execution in 408 sent thirty thousand federate soldiers into his camp, he besieged Rome three times. The first siege he lifted for a ransom the Senate scraped together by melting statues — thousands of pounds of gold and silver, silk, hides, and three thousand pounds of pepper. In the second, 409, he made the Senate crown a puppet emperor of his own choosing, a courtier named Priscus Attalus, then deposed his own creation when it proved useless as leverage. Only in 410, with the city starving again and Ravenna — safe behind its marshes — stonewalling every offer, did he let his men in. The sack was the failure of his policy, not its object.
+
+Even the violence was selective, by the standards of ancient sack. The Goths were Christians — Arian ones — and the tradition records the basilicas of Peter and Paul respected as sanctuaries, refugees spared inside them. There was killing, burning, and an enormous haul of treasure; there was also a city still standing, still inhabited, when they marched out after three days, taking with them the emperor's sister, Galla Placidia. Alaric was dead within months in southern Italy, no closer to the treaty he wanted.
+
+The Goths got their settlement eight years later, from a government that had learned the price of refusing. Rome got something stranger: proof, published to the whole Mediterranean, that the eternal city was mortal.`,
+    whyItMatters: `The sack matters for what it broke in people's heads, not what it broke in the city. It detonated the assumption of Roman permanence that eight centuries had built, and it forced the era's greatest mind to decouple Christianity's fate from Rome's — City of God argues that no earthly empire is God's vehicle, an idea with a longer future than the empire itself. Keep hold of the other lesson too: the man who sacked Rome had spent ten years trying to be hired by it. The west's destroyers were mostly rejected applicants, and every refusal that felt like firmness in Ravenna was purchased at prices like this.`,
+    misconception: {
+      claim: 'In 410 the barbarians burned Rome to the ground.',
+      correction: 'The sack lasted three days, the churches sheltered refugees, and the city remained inhabited and functioning — the capital was Ravenna in any case. The damage that echoed for centuries was psychological: the proof that Rome could fall at all.',
+    },
+    control: {},
+    markers: [{ type: 'disaster', label: 'Rome', at: [12.48, 41.89] }],
+    connects: ['stilicho-395ce', 'foederati-382ce', 'adrianople-378ce'],
+    sources: [
+      { author: 'Jerome', work: 'Letters and prefaces', note: 'Wrote from Bethlehem, from refugee reports; his despair set the event\'s tone for posterity more than any eyewitness account.' },
+      { author: 'Augustine', work: 'City of God', note: 'Not a narrative of the sack but the argument it provoked — and a deliberate minimization of the disaster to defend Christianity from blame.' },
+      { author: 'Peter Heather', work: 'The Fall of the Roman Empire', note: 'Stresses that Alaric\'s goal throughout was a negotiated position inside the empire, making the sack a bargaining failure, not a war aim.' },
+    ],
+  },
+
+  {
+    id: 'visigoth-settlement-418ce',
+    year: 418,
+    era: 'collapse',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'The Visigoths Settled in Aquitaine',
+    headline: 'Rome plants an allied Gothic kingdom in the Garonne valley — and discovers it can now pay its army only in provinces.',
+    tags: ['military', 'legal'],
+    body: `In 418 the imperial government did something no Roman government had done before: it settled a barbarian people, under its own king, on prime provincial land, on purpose. The general Constantius — the strongman who had rebuilt the west after 410 — planted the Visigoths in Aquitania Secunda, the rich Garonne valley between Bordeaux and Toulouse. This was payment. Under their king Wallia the Goths had spent two years campaigning for Rome in Spain, destroying the Siling Vandals and breaking the Alans; in return they received not gold, which Ravenna did not have, but a homeland inside Gaul, held as federates pledged to fight for the empire.
+
+How the settlement actually worked on the ground is one of the era's liveliest scholarly fights. The sources speak of hospitalitas, the old billeting rule, with the Goths receiving "shares" from Roman proprietors. The traditional reading has landowners surrendering up to two-thirds of their estates. Walter Goffart argued the shares were allocations of tax revenue, not evictions — the Goths as salaried garrison rather than land-grabbing settlers — which would explain the strange silence of Gallic landowners, who complain about everything else, on what should have been a confiscation without precedent.
+
+Either way, the constitutional fact was new. A kingdom now existed inside the empire — autonomous, armed, hereditary, legally planted — and the court that planted it called this arrangement a success. By the standards of 418 it arguably was: the Goths fought for Rome at the Catalaunian Plains in 451. By the standards of 476 it was the template for partition. Every later concession — Vandals in Africa by treaty in 435, Burgundians on the Rhône, Sueves confirmed in Gallaecia — follows the pattern set here: sovereignty traded for service, one diocese at a time.`,
+    whyItMatters: `418 marks the point where the western empire began paying for its army with the empire itself. The logic was individually rational each time — land the state could not defend, exchanged for soldiers the state could not raise — but the aggregate was self-liquidation, because every province settled was a province whose taxes no longer funded the next war. Whether you read the settlement as pragmatic genius or the beginning of the end largely decides which side you take in the whole fall-of-Rome debate; the evidence honestly supports both.`,
+    control: {
+      'gallia-aquitania': 'rival-germanic',
+    },
+    connects: ['alaric-sack-410ce', 'foederati-382ce', 'rhine-crossing-406ce'],
+    sources: [
+      { author: 'Prosper of Aquitaine and Hydatius', work: 'Chronicles', note: 'The settlement itself gets a bare line or two; nearly everything about its mechanics is inference.' },
+      { author: 'Walter Goffart', work: 'Barbarians and Romans', note: 'Argues the Goths were assigned tax shares, not expropriated estates — a reading that turns an invasion story into an accounting arrangement, and directly undercuts the "conquest" framing of this event.' },
+      { author: 'Peter Heather', work: 'The Fall of the Roman Empire', note: 'Counters that whatever the bookkeeping, an armed autonomous nation now sat athwart Gaul, and Rome could not remove it.' },
+    ],
+  },
+
+  {
+    id: 'vandals-africa-429ce',
+    year: 429,
+    yearEnd: 439,
+    era: 'collapse',
+    weight: 3,
+    reliability: 'well-attested',
+    title: 'Gaiseric Takes Africa',
+    headline: 'The Vandals cross to Africa and take Carthage without a fight — severing the tax revenue and grain that the entire western state runs on.',
+    tags: ['military', 'economic'],
+    body: `In May 429 Gaiseric, king of the Vandals and Alans, ferried his entire people — the chronicler's figure of eighty thousand includes women, children, and slaves — across the strait from Spain to Mauretania, and turned east along the African coast. Ten years later, on October 19, 439, he rode into Carthage without a siege, taking the second city of the western Mediterranean while its garrison was elsewhere and its people were at the races. In between lay the fatal decade: the long siege of Hippo Regius, where the aged Augustine died as the Vandals camped outside his walls; a treaty in 435 that conceded the poorer western provinces; and its casual breach once Gaiseric had measured Ravenna's weakness. With Carthage he acquired the richest diocese in the west, its grain fleet, its shipyards — and the Vandals, a people who had never held a coast, became overnight the Mediterranean's naval power.
+
+Africa was not just another province. It was the western budget. Centuries of peace had made it the west's great surplus region: the taxes of its wheat- and oil-rich provinces, and the fleet that fed Rome, were the fiscal core that paid for armies everywhere else. Gaul and Spain were already war zones and Britain was gone; Africa was the remaining engine, which is why the government had parked it behind the best-defended sea in the world and why Gaiseric's amphibious end-run around every Roman defense line was so lethal. Contemporaries understood immediately: expeditions to retake Africa were assembling within two years and never stopped being planned for the next forty.
+
+The traditional story that the Roman commander Bonifatius invited the Vandals in, during his quarrel with the court, appears only in later sources and is probably slander polished into anecdote; Gaiseric needed no invitation. He proved the ablest politician of the century — reigning nearly fifty years, playing Goths, Romans, and Huns against one another, and dying in his bed in 477, having outlasted the western empire he had gutted.
+
+Vandal rule in Africa kept Roman administration and Roman landlords where convenient, but unlike the Goths in Gaul, Gaiseric owed Rome nothing. He confiscated senatorial estates outright, persecuted the Catholic church in favor of his own Arian clergy, and used the grain fleet as an instrument of pressure. In 442 a humiliating treaty made it official: Ravenna recognized his possession of the richest provinces — the first time the empire conceded full sovereignty over core Roman territory to a conqueror — and from his new fleet Gaiseric raided Sicily and the Italian coasts at will. The province that had fed Rome now negotiated with it, when it bothered to negotiate at all.`,
+    whyItMatters: `If a single event killed the western empire, it is this one, and the weapon was arithmetic. Every Roman recovery for two centuries — after Hannibal, after the third-century crisis — had run on the same sequence: revenue rebuilds armies, armies retake provinces, provinces restore revenue. The loss of Africa broke the sequence at its first link. After 439 the west could not fund an army big enough to retake the one province that could fund an army, a trap with no interior exit — which is why the only serious attempts, in 441 and 468, had to be paid for by Constantinople. Everything after Carthage — the puppet emperors, the auctioned throne, 476 itself — happens inside that closed loop of insolvency.`,
+    control: {
+      'africa-proconsularis': 'rival-germanic',
+      'numidia': 'rival-germanic',
+      'mauretania-caesariensis': 'rival-germanic',
+      'mauretania-tingitana': 'rival-germanic',
+      'lusitania': 'rival-germanic',
+      'hispania-baetica': 'contested',
+      'hispania-tarraconensis': 'provincial',
+    },
+    markers: [{ type: 'siege', label: 'Carthage falls', at: [10.32, 36.85] }],
+    connects: ['vandals-spain-409ce', 'rhine-crossing-406ce', 'annona-fleet-30ce'],
+    sources: [
+      { author: 'Victor of Vita', work: 'History of the Vandal Persecution', note: 'Written decades later by a Catholic cleric under Vandal rule; invaluable and implacably hostile — a martyrology, not a balance sheet.' },
+      { author: 'Possidius', work: 'Life of Augustine', note: 'An eyewitness to the siege of Hippo by Augustine\'s friend and colleague.' },
+      { author: 'Bryan Ward-Perkins', work: 'The Fall of Rome and the End of Civilization', note: 'Makes the fiscal case that losing Africa\'s revenue, more than any battle, doomed the western state.' },
+    ],
+  },
+
+  {
+    id: 'aetius-433ce',
+    year: 433,
+    yearEnd: 454,
+    era: 'collapse',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'Aetius Runs the West',
+    headline: 'A general raised among Huns holds Gaul together for twenty years by renting barbarians to fight barbarians — and pays the Huns in Roman land.',
+    tags: ['military'],
+    body: `From 433 to 454 the western empire's effective ruler was Flavius Aetius, a general whose entire strategy could be written on a coin: no money, no Roman army — so borrow someone else's. Aetius had spent his boyhood as a diplomatic hostage among the Goths and then the Huns; he knew the steppe men personally, and Hunnic muscle was the foundation of his career. He used a Hunnic army to force his way back to power in 433 after losing the western civil war to his rival Bonifatius, and Hunnic armies remained his instrument of government. The price was Roman: the Huns received Pannonia, and the empire's Danubian heartland — the recruiting ground that had produced the soldier-emperors who saved Rome in the third century — passed to the steppe.
+
+The ledger of his two decades is astonishing on both sides. He destroyed the Burgundian kingdom on the Rhine in 436 with Hunnic troops, a massacre so complete it echoes down German legend as the fall of the Nibelungs. He penned the Goths back into Aquitaine, resettled the Alans, crushed Bagaudae risings, and kept a functioning Roman Gaul in existence for a generation. He also presided over losses he could do nothing about: Africa conceded to Gaiseric by treaty, Spain slipping away, Britain long gone. A later historian called him the last of the Romans — but his Rome was a brokerage, its policy the maintenance of a balance among peoples it could no longer command.
+
+The fatal flaw was the asset itself. Aetius's system worked only while the Huns were rentable — a mercenary pool and a threat he alone could aim. When Attila consolidated the Huns into a conquering power in the 440s, the west's hired sword became its largest enemy, and the man who knew the Huns best had to fight them.`,
+    whyItMatters: `Aetius embodies the west's endgame logic: with Africa's revenue gone, Roman power became the art of aiming other peoples' armies, and Pannonia shows what that art cost — strategy itself had become barter, paid in provinces. The deeper argument is about what his twenty years bought. One reading says he heroically delayed the inevitable; another says his Hunnic alliance fed the very power that then shattered the balance, and that stability rented from your future destroyer is not stability. Both are true in sequence, which is why Aetius, more than any emperor, is the tragic figure of the century.`,
+    control: {
+      'pannonia': 'rival-steppe',
+    },
+    connects: ['vandals-africa-429ce', 'visigoth-settlement-418ce', 'stilicho-395ce'],
+    sources: [
+      { author: 'Priscus', work: 'History (fragments)', note: 'The best-informed contemporary on Roman–Hunnic relations; survives only in quoted fragments.' },
+      { author: 'Procopius', work: 'Wars', note: 'Source of the "last of the Romans" verdict — written a century later, when the label had become an epitaph for the whole west.' },
+      { author: 'Peter Heather', work: 'The Fall of the Roman Empire', note: 'Argues Aetius\'s dependence on Hunnic power strengthened the Huns and stripped the Danube, making the cure a cause of the disease.' },
+    ],
+  },
+
+  {
+    id: 'federate-society-440ce',
+    year: 440,
+    dateNote: 'c.',
+    era: 'collapse',
+    weight: 1,
+    reliability: 'reconstructed',
+    title: 'Living Under the Federates',
+    headline: 'In Gothic Aquitaine and Vandal Africa, Romans keep Roman law and Roman landlords keep dinner parties — while taxes, armies, and churches change hands.',
+    tags: ['social', 'legal'],
+    nonTerritorial: true,
+    spatialFocus: ['gallia-aquitania', 'africa-proconsularis'],
+    body: `What was it actually like when your province became a kingdom? Mostly, at first, administrative. In Gothic Aquitaine, Romans continued to live under Roman law — the kings issued written codes, in Latin, drafted by Roman jurists, with separate provision for Goths and Romans. Taxes were still collected, now for Toulouse instead of Ravenna, and often at lighter rates; the moralist Salvian claimed, with a preacher's exaggeration, that poor Romans fled to barbarian territory to escape Roman tax collectors. Landed aristocrats kept their villas and their poetry, served Gothic kings as advisers and envoys, and married their children carefully around a legal ban on intermarriage. The deepest divide was not ethnic but ecclesiastical: the newcomers were Arian Christians, the Romans Nicene Catholics, worshipping the same God in rival churches.
+
+Vandal Africa shows the harsher face of the same arrangement. There Gaiseric owed the Romans nothing, and the confiscation of senatorial estates was real, as was intermittent persecution of the Catholic clergy — exiles, closures, and under his successors worse. Same institutional shell, entirely different experience.`,
+    whyItMatters: `Both pictures are true at once, and that is the point. Aquitaine — Roman law, functioning estates, negotiated coexistence — is the evidence for the "transformation" school: no apocalypse, just a change of management. Africa — expropriation and persecuted bishops — is the evidence for genuine rupture. The fall of the west was not one experience but a spread of experiences keyed to how each kingdom acquired its land, which is exactly why fifteen centuries later historians still cannot agree on whether Rome fell or merely changed.`,
+    control: {},
+    connects: ['visigoth-settlement-418ce', 'vandals-africa-429ce', 'foederati-382ce'],
+    sources: [
+      { author: 'Salvian of Marseille', work: 'On the Government of God', note: 'A sermon arguing Romans deserved their disasters; his tax-refugee claims are polemic with a factual core of unknown size.' },
+      { author: 'Victor of Vita', work: 'History of the Vandal Persecution', note: 'The Africa evidence at its most hostile; even discounted, it documents real expropriation and exile.' },
+      { author: 'Chris Wickham', work: 'The Inheritance of Rome', note: 'Synthesizes the regional spread — continuity and rupture varying province by province rather than one empire-wide story.' },
+    ],
+  },
+
+  {
+    id: 'catalaunian-451ce',
+    year: 451,
+    era: 'collapse',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'The Catalaunian Plains',
+    headline: 'Attila is stopped in Gaul by a Roman general commanding an army that is barely Roman — Goths, Alans, Burgundians, and Franks fighting for their own homes.',
+    tags: ['military'],
+    body: `In 451 Attila turned the full weight of the Hunnic empire west, crossing the Rhine with a coalition of subject peoples and sacking his way across northern Gaul — Metz burned, Orléans nearly fell. He was met, somewhere near Troyes on the Catalaunian Plains, by the strangest army Rome ever fielded: a Roman core under Aetius alongside the Visigothic army of King Theodoric I, plus Alans, Burgundians, and Franks — a coalition of the very peoples the empire had spent the century fighting, now defending their own settlements. The battle was enormous, chaotic, and decided by nightfall rather than maneuver. Theodoric died in the crush; his son was acclaimed on the field; Attila withdrew behind his wagons expecting a last stand that never came, and then retreated across the Rhine. It was the first time anyone had turned him back.
+
+Our main narrative is Jordanes, writing a century later with epic ambitions and a Gothic agenda — his casualty figures are fantasy and his set-piece speeches are invented, but the battle's shape and outcome are secure. What Aetius did next is the telling detail: he let the Huns go, and reportedly eased the new Gothic king homeward too. A broker to the end, he needed the Huns to survive as a counterweight; annihilating them would have left him alone with his allies.
+
+The nineteenth century canonized the battle as one of history's decisive moments — civilization saved from the Hun. That overreads it: Attila came back the very next year, into Italy. What the battle actually proved was narrower and stranger: the western empire could still win a great battle, but only as chairman of a barbarian coalition defending its own conquests.`,
+    whyItMatters: `Look at who fought, not who won. The "Roman" victory was won mostly by federate peoples defending land the empire had ceded them — the settlement policy of 418, so often read as surrender, here pays its one great dividend: the Goths bled for Gaul because Gaul was now theirs. That is the west's terminal condition in a single image. The empire had become a coordinator of allied kingdoms rather than a power in its own right, and a coordinator is only as durable as its usefulness — remove the Hunnic threat, and nobody needs the chairman.`,
+    control: {},
+    markers: [{ type: 'battle', label: 'Catalaunian Plains', at: [4.5, 48.75] }],
+    connects: ['aetius-433ce', 'visigoth-settlement-418ce'],
+    sources: [
+      { author: 'Jordanes', work: 'Getica', note: 'Written c. 551 from a lost Gothic-friendly history; the fullest account and the least trustworthy in its details — speeches, numbers, and Gothic heroics are literary.' },
+      { author: 'Priscus', work: 'History (fragments)', note: 'Contemporary and sober where he survives; the corrective to Jordanes when the two can be compared.' },
+      { author: 'Guy Halsall', work: 'Barbarian Migrations and the Roman West', note: 'Deflates the "battle that saved civilization" tradition; the strategic effect was real but limited — Attila invaded Italy months later.' },
+    ],
+  },
+
+  {
+    id: 'attila-italy-452ce',
+    year: 452,
+    era: 'collapse',
+    weight: 1,
+    reliability: 'well-attested',
+    title: 'Attila in Italy',
+    headline: 'Attila razes Aquileia and takes the plunder of the Po valley — then turns back after an embassy led by the bishop of Rome.',
+    tags: ['military'],
+    body: `The year after his check in Gaul, Attila came over the Julian Alps into Italy. Aquileia, the great fortress-city guarding the route, resisted him for months and was destroyed so thoroughly that its disappearance became legend — later tradition made its refugees the founders of Venice in the lagoons. Milan and Pavia were plundered; the Po valley lay open; no army stood between the Huns and Rome. What stopped him was an embassy: Pope Leo I and two senators met Attila near the Mincius river, and the invader turned back north. Christian tradition gave Leo the credit, later art gave him the apostles Peter and Paul hovering in armed support, and the scene became one of the papacy's founding images.
+
+The likelier reasons are grimmer: famine in an Italy stripped by his own campaign, disease in his army, plunder already loaded, and eastern Roman troops raiding his Danubian homeland while he lingered. Attila had every practical reason to leave; Leo gave the departure a dignified occasion.`,
+    whyItMatters: `The event's real legacy is the embassy, not the invasion. Whatever mix of plague and strategy actually turned Attila, what contemporaries saw was the bishop of Rome standing where the emperor should have stood — and the story stuck because it matched the emerging reality. As the state hollowed out, bishops were becoming the men who fed cities, ransomed captives, and negotiated with kings; Leo at the Mincius is that transfer of function caught in a single scene, the medieval papacy visible in embryo.`,
+    control: {
+      'venetia': 'contested',
+    },
+    markers: [{ type: 'disaster', label: 'Aquileia', at: [13.37, 45.77] }],
+    connects: ['catalaunian-451ce', 'aetius-433ce'],
+    sources: [
+      { author: 'Prosper of Aquitaine', work: 'Epitoma Chronicon', note: 'A contemporary and an admirer of Leo — the earliest version of the embassy story is already a papal one.' },
+      { author: 'Christopher Kelly', work: 'Attila the Hun', note: 'Weighs plague, famine, and eastern counterattacks as the operative causes of the withdrawal.' },
+    ],
+  },
+
+  {
+    id: 'attila-dies-453ce',
+    year: 453,
+    era: 'collapse',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'Attila Dies and the Hunnic Empire Evaporates',
+    headline: 'The most feared man in Europe dies of a hemorrhage on his wedding night — and the empire that was only his willpower is gone within a year.',
+    tags: ['military', 'succession'],
+    body: `In 453 Attila took another wife, a girl named Ildico, feasted his own wedding, and was found dead in the morning — drowned in his own blood from a burst vessel, with his bride weeping beside him. The account descends from Priscus, the Roman diplomat who had dined in Attila's wooden palace and is the closest thing the Huns have to an honest witness; the details that follow, the triple coffin of gold, silver, and iron and the slaughtered burial party, are legend already forming. What is certain is what happened next. His sons divided the empire like property and fell out; the subject peoples — Gepids, Ostrogoths, Heruli, and the rest, who were always the majority of Hunnic armies — rose under the Gepid king Ardaric; and at the battle of the Nedao river in 454 the Hunnic empire was destroyed by its own subjects. Within a year of the wedding feast, the power that had terrorized two empires effectively ceased to exist.
+
+Nothing exposes what that power was better than the speed of its disappearance. The Hunnic empire was not a state; it was an extraction machine — tribute, plunder, and subsidies flowing to a warlord who redistributed them to keep a coalition of subject kings afraid and paid. It had no institutions to outlive its founder, and it didn't. The beneficiaries of the collapse settled south: the Gepids took the old Hunnic heartland, and the Ostrogoths — freed after two generations under Hunnic lordship — moved into Pannonia, inside the nominal empire, as the newest armed nation on Roman soil.`,
+    whyItMatters: `The irony is that Attila's death hurt the western empire almost as much as his life had. The Hunnic threat was the glue of the western system: it kept the federate kingdoms needing Rome's coordination, and Hunnic manpower had been the private arsenal of Aetius for twenty years. With the Huns gone, the coalition of 451 had no reason to exist, Aetius lost both his army and his argument — he was murdered within the year — and a fresh people, the Ostrogoths, entered the queue for Roman land. The Huns' greatest historical effect was always indirect: they pushed peoples into the empire in 376 and 406, and then, by vanishing, removed the last reason those peoples needed the empire at all.`,
+    control: {
+      'venetia': 'core',
+      'pannonia': 'rival-germanic',
+    },
+    connects: ['attila-italy-452ce', 'catalaunian-451ce', 'aetius-433ce'],
+    sources: [
+      { author: 'Priscus', work: 'History (fragments)', note: 'Actually met Attila on embassy; his sober account of the death reaches us secondhand through Jordanes.' },
+      { author: 'Jordanes', work: 'Getica', note: 'Preserves Priscus and adds the legendary funeral; the burial details should be enjoyed, not believed.' },
+      { author: 'Peter Heather', work: 'The Fall of the Roman Empire', note: 'Analyzes the Hunnic empire as a tribute machine without institutions — and its collapse as a second demographic shock to the Roman frontier.' },
+    ],
+  },
+
+  {
+    id: 'valentinian-aetius-454ce',
+    year: 454,
+    yearEnd: 455,
+    era: 'collapse',
+    weight: 1,
+    reliability: 'well-attested',
+    title: 'Valentinian Kills Aetius, and Is Killed',
+    headline: 'The emperor cuts down his own general mid-audience — and is assassinated by the dead man\'s soldiers within six months.',
+    tags: ['succession'],
+    body: `In September 454, during a financial audience at Ravenna, the emperor Valentinian III leapt from his throne and, with the help of a chamberlain, hacked the unarmed Aetius to death with his own sword — the first emperor in living memory to kill a man with his own hand. The general who had held Gaul for twenty years died at a budget meeting. A courtier's verdict became famous: the emperor had used his left hand to cut off his right. Six months later, in March 455, two of Aetius's Scythian guardsmen killed Valentinian on the Campus Martius as he dismounted to practice archery; his escort stood and watched. The senator Petronius Maximus, who had helped engineer both murders, bought the throne within the day.
+
+With Valentinian died the Theodosian dynasty in the west — the family thread that had connected every legitimate western emperor for ninety years. He left no son; he left, instead, a treaty with Gaiseric sealed by his daughter's betrothal, which his death and his successor's ambitions promptly voided.`,
+    whyItMatters: `Six months undid two structures at once. Killing Aetius repeated the Stilicho error at a worse moment — the west executed its last commander of stature with no Hunnic counterweight left and no army behind the throne but the dead man's. And ending the dynasty removed the final source of legitimacy that was not simply force: after 455 the western throne is a prize argued over by generals, senators, and foreign kings, and Gaiseric — whose claim ran through the murdered emperor's family — was already loading his ships.`,
+    control: {},
+    connects: ['attila-dies-453ce', 'aetius-433ce', 'stilicho-395ce'],
+    sources: [
+      { author: 'Priscus', work: 'History (fragments)', note: 'The fullest near-contemporary account of both murders, surviving in later excerpts; the famous right-hand quip may be polished anecdote.' },
+      { author: 'John Julius Norwich and modern successors', work: 'General histories of the late west', note: 'The episode is uncontested in outline; its dramatic details descend from hostile court gossip.' },
+    ],
+  },
+
+  {
+    id: 'vandal-sack-455ce',
+    year: 455,
+    era: 'collapse',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'The Vandal Sack of Rome',
+    headline: 'Gaiseric spends fourteen unhurried days stripping Rome of its treasures — including the loot of the Jerusalem Temple — and sails home with an empress.',
+    tags: ['military'],
+    body: `In May 455 Gaiseric's fleet appeared at the mouth of the Tiber, summoned by an inheritance dispute. The usurper Petronius Maximus had forced Valentinian's widow Eudoxia into marriage and broken the betrothal between her daughter and Gaiseric's son — voiding the treaty that had kept the Vandals at peace, and giving Gaiseric a dynastic claim to press. Rome had no army to send against him; Maximus was stoned to death by a Roman mob as he tried to flee. Pope Leo went out to negotiate for the second time in three years, and the terms held: no burning, no massacre, no torture. Then the Vandals plundered the city, methodically, for fourteen days.
+
+It was less a sack than a supervised removal. Everything portable and precious went to the ships: the palace treasuries, statuary, even half the gilt-bronze roof tiles of the Temple of Jupiter on the Capitol — and, most resonant of all, the treasures of the Jerusalem Temple that Titus had brought to Rome in 70 CE, now looted from the looter four centuries on. The empress Eudoxia and her two daughters sailed to Carthage with the cargo; one daughter married Gaiseric's son, giving the Vandal royal line Theodosian blood — the point of the whole exercise. Thousands of skilled captives went too.
+
+Compare the two sacks and the century's decline measures itself. In 410 Rome was taken by a frustrated Roman ally after years of failed negotiation, for three days, almost apologetically. In 455 it was harvested by a sovereign sea power, at leisure, as the enforcement clause of a marriage contract — and no Roman force even attempted resistance.`,
+    whyItMatters: `The sack revealed the west's condition rather than causing it: no fleet, no field army, no dynasty — a capital that could be inventoried at will by a kingdom built on a province Rome had failed to defend sixteen years earlier. It is also a lesson in how words acquire history. The Vandals' name became a synonym for mindless destruction, yet what they practiced at Rome was the opposite — disciplined, negotiated, profit-maximizing extraction. The reputation was written by their clerical enemies and sealed by a French bishop coining "vandalisme" in 1794. The peoples who dismantled the western empire were rarely mindless; that is precisely what made them effective.`,
+    misconception: {
+      claim: 'The Vandals wantonly smashed Rome — that\'s why we call it vandalism.',
+      correction: 'The 455 sack was organized asset-stripping under negotiated terms: fourteen days of systematic removal with little burning or slaughter, by prior agreement with Pope Leo. The word "vandalism" is a French coinage of 1794; the Vandals\' crime was thoroughness, not frenzy.',
+    },
+    control: {
+      'sicilia': 'contested',
+      'sardinia-corsica': 'rival-germanic',
+    },
+    markers: [{ type: 'disaster', label: 'Rome', at: [12.48, 41.89] }],
+    connects: ['valentinian-aetius-454ce', 'vandals-africa-429ce', 'alaric-sack-410ce'],
+    sources: [
+      { author: 'Prosper of Aquitaine', work: 'Epitoma Chronicon', note: 'Contemporary; credits Leo with the terms that spared the city — a papal partisan\'s framing, but the restraint itself is corroborated.' },
+      { author: 'Procopius', work: 'Wars', note: 'Writing a century later, tracks the Temple treasure to Carthage and beyond; distance shows in his details.' },
+      { author: 'Victor of Vita', work: 'History of the Vandal Persecution', note: 'The hostile Catholic tradition that built the Vandals\' black legend — read against the sack\'s actual negotiated conduct.' },
+    ],
+  },
+
+  {
+    id: 'end-daily-life-460ce',
+    year: 460,
+    dateNote: 'c.',
+    era: 'collapse',
+    weight: 1,
+    reliability: 'well-attested',
+    title: 'Sidonius\'s World',
+    headline: 'A Gallic aristocrat writes polished letters about villas, dinner parties, and annoying Burgundian neighbors — while the state he was raised to serve quietly ceases to exist.',
+    tags: ['daily-life', 'culture'],
+    nonTerritorial: true,
+    spatialFocus: ['gallia-aquitania', 'gallia-lugdunensis'],
+    body: `The best window into the west's last Roman generation is the letter collection of Sidonius Apollinaris — a Gallic aristocrat born around 430, son-in-law of one emperor, panegyrist of three, briefly prefect of Rome, and finally bishop of Clermont. His letters show a world astonishingly intact: villa weekends with heated baths and library alcoves, verse competitions, ball games before dinner, gossip about appointments. They also show its new furniture. He complains, in elegant hexameters, about the seven-foot Burgundians quartered near him, their hair greased with rancid butter, their songs at dawn; he praises a Visigothic king's table manners for readers who may soon need the king's favor. The career ladder he was bred for — court office, prefecture, consulate — was vanishing rung by rung, and like most of his class he stepped sideways into the one institution still hiring: the church.
+
+As bishop he led Clermont's hopeless resistance to the Gothic king Euric through four sieges, was briefly imprisoned when the city was ceded, made his peace, and died in his cathedral around 485, honored as a saint. His published letters are curated performance — that is part of the evidence. Keeping up appearances was the point.`,
+    whyItMatters: `Sidonius is the transformation thesis with a face: the aristocracy did not die with the empire — it rebased itself on land and the church, carried Latin letters into the Middle Ages, and its bishops governed cities for the next five hundred years. But read what his polish is painted over. The thing missing from these serene letters is the Roman state — the salaries, courts, and careers that had made villa civilization possible — and Sidonius knows it, joking grimly that he lives among nations who ignore Rome. Continuity of culture and death of the state are not competing stories; his letters are both at once.`,
+    control: {},
+    connects: ['visigoth-settlement-418ce', 'federate-society-440ce', 'puppet-emperors-455ce'],
+    sources: [
+      { author: 'Sidonius Apollinaris', work: 'Letters and Poems', note: 'Self-consciously literary and edited for publication by the author — the silences and poses are themselves evidence.' },
+      { author: 'Jill Harries', work: 'Sidonius Apollinaris and the Fall of Rome', note: 'Reads the letters as an aristocracy\'s survival strategy rather than mere nostalgia.' },
+    ],
+  },
+
+  {
+    id: 'puppet-emperors-455ce',
+    year: 455,
+    yearEnd: 476,
+    era: 'collapse',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'Nine Emperors in Twenty-One Years',
+    headline: 'The western throne becomes a puppet stage worked by a barbarian kingmaker — while Euric drops the pretense and simply conquers Gaul and Spain.',
+    tags: ['succession', 'military'],
+    body: `Between the Vandal sack and the deposition of 476, nine men held the western throne, and almost none of them held power. The list is a study in futility: Petronius Maximus, stoned by a mob after ten weeks; Avitus, a Gallic noble installed by his Visigothic friends and deposed when Italy would not feed his government; Majorian; Libius Severus, a pure figurehead; a two-year vacancy; Anthemius, sent from Constantinople with eastern troops; Olybrius, Gaiseric's preferred candidate; Glycerius; Julius Nepos; and a general's small son. The constant behind the parade was Ricimer — half-Sueve, half-Goth, master of the army in Italy for sixteen years. As an Arian barbarian he could not wear the purple himself, so he manufactured emperors, and destroyed them when they showed independence: Avitus deposed, Majorian executed, Anthemius besieged in Rome itself and killed in 472.
+
+Majorian is the exception that proves the machine. Alone of the nine he governed — reforming taxation, protecting curials, rebuilding a fleet in Spain to retake Africa, the one strategy that could have refinanced the west. The fleet was betrayed and burned at anchor near Cartagena in 460; Ricimer arrested him on his way home and had him beheaded. The lesson every later emperor absorbed: attempting recovery was a capital offense.
+
+Meanwhile the theater lost its audience. Euric, king of the Visigoths from 466, read the vacancy in Italy correctly, dropped the century-old federate fiction, and conquered on his own account — the Loire, the Auvergne, Provence, and nearly all of Spain. By the 470s the "western empire" governed Italy and fragments, and the kingdoms no longer asked.`,
+    whyItMatters: `These two decades answer the question "why did nobody save the west?" — because the system now punished saving it. Any emperor weak enough to be safe was too weak to govern; any emperor strong enough to govern threatened the generalissimo who made him, and died. Majorian's execution is the proof: the west's last plausible restorer was killed not by barbarians but by the structure of his own court. By 476 the deposition of an emperor changed nothing on the ground, because Euric and his peers had already converted the empire's provinces into kingdoms while Italy argued about thrones.`,
+    control: {
+      'hispania-tarraconensis': 'rival-germanic',
+      'hispania-interior': 'rival-germanic',
+      'hispania-baetica': 'rival-germanic',
+      'gallia-narbonensis': 'rival-germanic',
+      'gallia-lugdunensis': 'rival-germanic',
+      'gallia-belgica': 'rival-germanic',
+    },
+    connects: ['valentinian-aetius-454ce', 'vandal-sack-455ce', 'visigoth-settlement-418ce'],
+    sources: [
+      { author: 'Sidonius Apollinaris', work: 'Panegyrics', note: 'Delivered formal praise of Avitus, Majorian, and Anthemius in turn — a loyal Roman\'s serial accommodation, and our best contemporary voice.' },
+      { author: 'Hydatius', work: 'Chronicle', note: 'Watches the same years from Spain, where the puppet politics of Italy read as distant noise while Sueves and Goths divided the peninsula.' },
+      { author: 'Penny MacGeorge', work: 'Late Roman Warlords', note: 'Reconstructs Ricimer\'s position soberly against the tradition that makes him a pantomime villain.' },
+    ],
+  },
+
+  {
+    id: 'expedition-468ce',
+    year: 468,
+    era: 'collapse',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'The Great Expedition Burns at Anchor',
+    headline: 'Both empires empty their treasuries into an armada against Carthage — and Gaiseric destroys it in a night with fireships and a favorable wind.',
+    tags: ['military', 'economic'],
+    body: `In 468 the two halves of the empire made their last joint effort: a combined operation to destroy the Vandal kingdom and reclaim Africa's revenue for the west. The scale was extraordinary. The eastern emperor Leo bankrolled a fleet the sources count in four figures, carrying an army gathered from both empires; the recorded cost — over a hundred thousand pounds of gold and silver — was several times the east's annual revenue, a sum chroniclers were still marveling at a century later. The plan was a three-pronged convergence on Carthage: one force through Egypt and Tripolitania, another under Marcellinus taking Sardinia, and the main fleet under Basiliscus, the eastern empress's brother, landing at Cape Bon, forty miles from the city.
+
+It reached Cape Bon and stopped. Gaiseric, master of the sea for thirty years, asked for a five-day truce to prepare his surrender — and Basiliscus, incomprehensibly, granted it. The wind changed, exactly as Gaiseric had waited for it to. Fireships came down on the anchored, crowded fleet at night, and the Vandal warships followed the flames in. Half the armada burned or sank; the rest straggled home. Basiliscus fled to sanctuary in Constantinople and was spared through his sister; Marcellinus was assassinated in Sicily, perhaps on a rival general's order; rumor, then and now, added bribery to incompetence. The east spent years recovering solvency, and in 474 the new emperor Zeno made a formal peace with Carthage — the diplomatic language for never trying again. Gaiseric, once more, had beaten both empires without fighting a land battle, and the western throne he had just spared lost its final reason to exist.`,
+    whyItMatters: `Cape Bon, not 476, is the western empire's point of no return, because it was the last moment the ledger could have been fixed. Africa retaken means the west refinanced, and both empires knew it — that is why they spent everything on one throw. After the fire there was no more money for another attempt, the east wrote the west off as unrecoverable, and the remaining eight years of western history are executors settling an estate. Historians who insist the fall was contingent rather than inevitable point here: the empire did not drift to its end — it came within one squandered truce and one wind-shift of a different century.`,
+    control: {},
+    connects: ['vandals-africa-429ce', 'vandal-sack-455ce', 'puppet-emperors-455ce'],
+    sources: [
+      { author: 'Procopius', work: 'Wars', note: 'The fullest account, written eighty years later as backstory to Justinian\'s successful invasion — the earlier failure makes the later triumph shine, and he knows it.' },
+      { author: 'Priscus and Candidus', work: 'Histories (fragments)', note: 'The cost figures descend from these lost contemporaries and vary wildly between excerpts; the order of magnitude — ruinous — is not in doubt.' },
+      { author: 'Peter Heather', work: 'The Fall of the Roman Empire', note: 'Treats 468 as the decisive lost gamble: with Africa unrecovered, the western state\'s bankruptcy became terminal by arithmetic.' },
+    ],
+  },
+
+  {
+    id: 'odoacer-476ce',
+    year: 476,
+    era: 'collapse',
+    weight: 3,
+    reliability: 'well-attested',
+    title: 'Odoacer Deposes the Last Western Emperor',
+    headline: 'A federate officer pensions off a usurper\'s teenage son, mails the imperial regalia to Constantinople — and nobody alive thinks the Roman Empire has ended.',
+    tags: ['constitutional', 'succession'],
+    body: `The event that closes every timeline of Rome was, to the people in the room, a modest administrative rearrangement. In 476 the army of Italy — by now composed of federate soldiers, Sciri, Heruli, and others — asked for what every other federate people had received: a permanent settlement, a share of the land. The general Orestes, who a year earlier had driven out the emperor Julius Nepos and crowned his own teenage son Romulus, refused them. An officer named Odoacer promised to grant it, and the army made him king. Orestes was executed at Placentia in August; on September 4 Odoacer took Ravenna and deposed the boy emperor — then, in the era's most humane anticlimax, spared him as harmless, and retired him to a villa in Campania on a generous pension. Romulus Augustulus, the little Augustus who carried both founder-names, disappears from history alive.
+
+What Odoacer did next is the point. He did not claim the throne; he abolished the need for it. The Senate, at his prompting, sent the western imperial regalia — the diadem and purple cloak — to Constantinople with a message for the emperor Zeno: one emperor sufficed for both halves, and Odoacer would govern Italy as Zeno's officer, with the title of patrician. Zeno equivocated — the deposed Nepos still lived in Dalmatia, and Zeno pointedly recommended his restoration — but accepted the arrangement in practice. Odoacer then governed Italy for seventeen competent years, king to his own soldiers and Roman administrator to everyone else: consuls nominated and confirmed in the east, the Senate meeting and minting, Roman law running, taxes collected by the same officials who had collected them for Romulus. He even struck coins in Nepos's name, and recovered Sicily from the Vandals by treaty — territorially, the "fall of Rome" briefly enlarged Roman Italy.
+
+The biographies of the moment's two principals measure how mixed the world already was. Odoacer was the son of Edeco, one of Attila's ambassadors to Constantinople; Orestes had been Attila's own secretary. The last struggle of the western empire was fought between two alumni of the Hun court, over a Roman throne neither could occupy, for an army neither could pay without land.
+
+No contemporary marked 476 as the end of anything. The date's fame is retrospective: an eastern chronicler writing around 518, Marcellinus Comes, first flagged it as the moment the western empire perished, and later tradition — Byzantine, then modern — hardened his line into the most famous date in European history.`,
+    whyItMatters: `The teaching value of 476 is precisely that it felt like nothing. Every function of a western emperor had already migrated elsewhere — defense to federate kings, revenue to their kingdoms, legitimacy to Constantinople, local government to bishops and landowners — so removing the office removed a redundancy. That is the deep answer to "when did Rome fall": not at a stroke but by the emptying-out of an office until a soldier could notice, correctly, that it no longer needed filling. And the fact that we nonetheless date the fall to 476 teaches the other lesson: periodization is an argument made by later historians, and this argument was first made in Constantinople, by men who wanted the empire's sole legitimate line to run through their own city.`,
+    misconception: {
+      claim: 'The Roman Empire fell in 476 AD.',
+      correction: 'In 476 a teenage usurper lost a throne whose powers were already gone; the empire, as its citizens understood it, continued in Constantinople for another 977 years. Even in Italy, the Senate sat, consuls were named, and Roman law ran under Odoacer, who claimed to govern for the eastern emperor. 476 became "the fall" only in later historians\' retrospect.',
+    },
+    control: {
+      'latium': 'rival-germanic',
+      'etruria': 'rival-germanic',
+      'umbria': 'rival-germanic',
+      'picenum': 'rival-germanic',
+      'samnium': 'rival-germanic',
+      'campania': 'rival-germanic',
+      'apulia': 'rival-germanic',
+      'lucania-bruttium': 'rival-germanic',
+      'magna-graecia': 'rival-germanic',
+      'cisalpina': 'rival-germanic',
+      'liguria': 'rival-germanic',
+      'venetia': 'rival-germanic',
+      'sicilia': 'rival-germanic',
+      'raetia': 'lost',
+      'noricum': 'lost',
+    },
+    markers: [{ type: 'political', label: 'Ravenna', at: [12.2, 44.42] }],
+    connects: ['expedition-468ce', 'puppet-emperors-455ce', 'foederati-382ce'],
+    sources: [
+      { author: 'Anonymus Valesianus', work: 'Excerpta (part II)', note: 'A patchy later compilation, but preserves the pension, the villa, and the regalia embassy.' },
+      { author: 'Marcellinus Comes', work: 'Chronicle', note: 'The eastern chronicler who, c. 518, first cast 476 as the western empire\'s death — the invention of the date\'s significance, four decades after the fact.' },
+      { author: 'Brian Croke', work: 'A.D. 476: The Manufacture of a Turning Point', note: 'The modern study of how an unremarkable year became the most famous date in Roman history.' },
+    ],
+  },
+
+  {
+    id: 'nepos-480ce',
+    year: 480,
+    era: 'collapse',
+    weight: 1,
+    reliability: 'well-attested',
+    title: 'The Death of Julius Nepos',
+    headline: 'The last western emperor recognized by Constantinople is murdered by his own men in Dalmatia — the tidier end date almost nobody uses.',
+    tags: ['succession'],
+    body: `The deposition of 476 left a loose end. Julius Nepos — the emperor Orestes had chased out of Ravenna in 475 — was still alive, still recognized by Constantinople, ruling a rump of empire from Salona in Dalmatia and petitioning Zeno for restoration to Italy. Odoacer handled him with exquisite cynicism: he acknowledged Nepos as nominal sovereign and struck coins in his name, while making certain he never crossed the Adriatic. In 480 Nepos was murdered at his villa near Salona by two of his own retainers; suspicion touched Glycerius, the previous emperor, whom Nepos had deposed and consigned to a bishopric. Odoacer then sailed to Dalmatia, executed the assassins with public righteousness, and annexed the province.
+
+By the strict constitutional ledger, 480 — not 476 — ends the western imperial line: Nepos was the last man Constantinople recognized as emperor of the west. History has voted for the better story over the better law.`,
+    whyItMatters: `The pedantry is the lesson. That the western empire's end can be dated to 476, or 480, or later still, shows there was no single thing that ended — an office lapsed, a recognition expired, an administration continued under new management, each on its own schedule. Where a historian pins the end reveals what they think the empire essentially was: a throne, a legal fiction, or a system. The map in this app uses 476 because tradition does; Nepos is the asterisk that keeps the tradition honest.`,
+    control: {
+      'dalmatia': 'rival-germanic',
+    },
+    connects: ['odoacer-476ce', 'puppet-emperors-455ce'],
+    sources: [
+      { author: 'Marcellinus Comes', work: 'Chronicle', note: 'Records the murder in a line; even the chronicler who invented 476\'s significance knew the last emperor died in 480.' },
+      { author: 'Anonymus Valesianus', work: 'Excerpta', note: 'Source for Odoacer\'s coins in Nepos\'s name and the Dalmatian annexation — loyalty as blockade.' },
+    ],
+  },
+
+  {
+    id: 'east-continues-1453',
+    year: 476,
+    yearEnd: 1453,
+    era: 'epilogue',
+    weight: 3,
+    reliability: 'well-attested',
+    title: 'The Empire That Did Not Fall',
+    headline: 'The Roman Empire continues for another thousand years in the east, run by people who call themselves Romans — the name "Byzantine" is invented a century after they are gone.',
+    tags: ['constitutional', 'culture'],
+    body: `The Roman Empire did not end in 476; it lost its western provinces. The eastern half — the richer half, the half Theodosius's division had endowed with Egypt, Syria, Asia Minor, and the short Danube frontier — carried on without interruption: the same offices descended from Augustus, the same law, the same Senate, the same taxes, ruled from the New Rome that Constantine had planted on the Bosporus precisely because the east was where the money was. Its citizens called themselves Romaioi — Romans — and their state the empire of the Romans, in Greek, until the fifteenth century. No one who lived in it ever heard the word "Byzantine": that name was coined by a German scholar, Hieronymus Wolf, in 1557, a full century after the empire's extinction.
+
+Why did the east survive what killed the west? Structure, not virtue. It held the tax engines of Egypt and Syria, so it could always rebuild armies or simply pay enemies to leave — the subsidy was a weapon the broke west never had. Its exposed European frontier was short, and behind it stood Constantinople, ringed by the Theodosian Walls, which defeated every siege for eight hundred years. When the fifth-century storms came, the east could buy, divert, or absorb them; the west had to fight them with an empty treasury, and couldn't.
+
+The next millennium was no serene coda. Justinian retook Africa and Italy in the sixth century; the seventh brought near-death — Persia at the walls, then the Arab conquests stripping Egypt, Syria, and Africa within a generation — and the empire contracted to an Anatolian-Balkan core, Greek-speaking and embattled, yet still Rome to itself and its neighbors. It recovered mightily by the eleventh century, was broken not by infidels but by the Fourth Crusade in 1204, when western Christians sacked Constantinople and dismembered the state; restored itself in 1261 as a shadow; and ended on May 29, 1453, when the Ottoman army breached the land walls and the last emperor — Constantine XI, eighty-eighth in a line from Augustus — died fighting at the breach. Even then the claim did not quite die: Mehmed the Conqueror took the title Kayser-i Rum, Caesar of Rome.
+
+Call the span from the first Augustus to the last Constantine what it is: roughly 1,480 years of continuous Roman statehood. The "fall of Rome" of 476 is the story of half an empire, told by the heirs of the half that fell.`,
+    whyItMatters: `Whether you count Roman history as ending in 476 or 1453 is not trivia — it decides what you think the empire was. The habit of writing the east out of the story was itself a historical act: western Europe's popes and emperors needed the Roman inheritance vacant so they could claim it, and early modern scholars obliged by renaming the surviving empire "Byzantine," as if it were some other, lesser thing. Take the empire at its own word and the shape of the whole subject changes — Rome becomes a Mediterranean state that lost its western half in the fifth century and its life in the fifteenth, and every "fall of Rome" argument becomes an argument about half a patient who lived another thousand years.`,
+    misconception: {
+      claim: 'The Byzantine Empire was a separate, Greek empire that came after Rome.',
+      correction: 'It was the Roman Empire — in unbroken legal and institutional continuity from Augustus — and its citizens called themselves Romans to the end. "Byzantine" was coined in 1557, a century after the empire fell; no one who lived under it ever used the word.',
+    },
+    control: {},
+    connects: ['odoacer-476ce', 'constantinople-330ce', 'theodosius-division-395ce'],
+    sources: [
+      { author: 'Anthony Kaldellis', work: 'Romanland', note: 'The forceful modern case that "Byzantium" was simply Rome, and that denying its Romanness is a western tradition, not a fact.' },
+      { author: 'Judith Herrin', work: 'Byzantium: The Surprising Life of a Medieval Empire', note: 'An accessible survey of the millennium the label "epilogue" unfairly compresses.' },
+      { author: 'Marcellinus Comes', work: 'Chronicle', note: 'An eastern Roman announcing the western empire\'s death — proof that the surviving half saw itself as the empire, not a successor.' },
+    ],
+  },
+
+  {
+    id: 'justinian-527ce',
+    year: 527,
+    yearEnd: 565,
+    era: 'epilogue',
+    weight: 2,
+    reliability: 'well-attested',
+    title: 'Justinian: Reconquest, Code, and Plague',
+    headline: 'The east takes Africa back in a single season and Italy back over twenty ruinous years — while Justinian\'s lawyers build Rome\'s most durable conquest out of text.',
+    tags: ['military', 'legal'],
+    body: `Fifty years after the western throne lapsed, the empire came back for its provinces. Justinian — a Latin-speaking Balkan soldier's nephew who reigned in Constantinople from 527 to 565 — sent his general Belisarius against Vandal Africa in 533, and the kingdom that had defied two empires for a century collapsed in a single season: two battles, Carthage retaken, the Vandal king paraded in a triumph. Italy looked equally easy at first — Sicily and Naples fell fast, Rome opened its gates in 536 — and then was not: the Ostrogoths fought back, and the Gothic War ground on for nearly twenty years. Rome was besieged five times, its aqueducts cut, its population scattered; the war that reclaimed Italy for the empire wrecked it more thoroughly than the fifth century ever had. In 554 Italy was Roman again, and ruined. The Senate of Rome, which had survived Alaric, Gaiseric, and Odoacer, faded out of existence within a generation; the consulship, older than the Republic's wars with Veii, had already been allowed to lapse in 541.
+
+Two other legacies outweighed the maps. First, the law: Justinian's commission under Tribonian compressed a millennium of Roman jurisprudence into the Corpus Iuris Civilis — Code, Digest, Institutes — completed by 534. Second, the pandemic: in 541 bubonic plague reached Egypt and swept the Mediterranean, the first appearance of Yersinia pestis in Eurasian history. Its mortality is fiercely debated — estimates run from grave to catastrophic — but it struck an empire stretched to the limit of its resources, and the recurrences ran for two centuries. Within three years of Justinian's death the Lombards were in Italy; within a century the Arab conquests had taken Egypt, Syria, and then Africa itself. The reconquest's territorial gains proved a high-water mark, not a restoration.`,
+    whyItMatters: `Justinian settles, in one reign, both halves of the fall-of-Rome argument. Africa retaken in a season proves the contingency school's point — the western collapse was not fated, since the empire demonstrably had the power to reverse it. Italy proves the other point: the recovery destroyed what it recovered, and the peninsula that had passed to Odoacer intact was left depopulated and broken by its liberation. And the durable conquest turned out to be the one made of text. The Corpus Iuris, rediscovered in eleventh-century Italy, became the foundation of continental law; Rome's most successful annexation of the modern world was carried out by a book.`,
+    misconception: {
+      claim: 'Justinian\'s reconquest restored the Roman west.',
+      correction: 'It restored territory, briefly and at ruinous cost. Italy was devastated by twenty years of war and lost to the Lombards within three years of Justinian\'s death; Africa held longer but fell to the Arab conquests in the following century. The reconquest\'s lasting achievement was legal, not territorial: the Corpus Iuris Civilis.',
+    },
+    control: {
+      'africa-proconsularis': 'provincial',
+      'numidia': 'provincial',
+      'sardinia-corsica': 'provincial',
+      'sicilia': 'provincial',
+      'latium': 'provincial',
+      'etruria': 'provincial',
+      'umbria': 'provincial',
+      'picenum': 'provincial',
+      'samnium': 'provincial',
+      'campania': 'provincial',
+      'apulia': 'provincial',
+      'lucania-bruttium': 'provincial',
+      'magna-graecia': 'provincial',
+      'venetia': 'provincial',
+      'liguria': 'provincial',
+      'hispania-baetica': 'provincial',
+    },
+    connects: ['east-continues-1453', 'odoacer-476ce', 'vandals-africa-429ce'],
+    sources: [
+      { author: 'Procopius', work: 'Wars and Secret History', note: 'The same eyewitness wrote the official war narrative and a private character assassination of Justinian — a source that impeaches itself, usefully.' },
+      { author: 'Kyle Harper', work: 'The Fate of Rome', note: 'Puts the 541 plague and climate shocks at the center of the sixth-century unraveling — nature as a protagonist alongside strategy.' },
+      { author: 'Peter Sarris', work: 'Justinian: Emperor, Soldier, Saint', note: 'A recent full portrait balancing the law, the wars, and the pandemic.' },
+    ],
+  },
+
+  {
+    id: 'why-west-fell-565ce',
+    year: 565,
+    era: 'epilogue',
+    weight: 2,
+    reliability: 'contested',
+    title: 'Why the West Fell — the Argument',
+    headline: 'Fifteen centuries on, historians still disagree about whether Rome fell or transformed — and the honest answer is that the evidence supports both.',
+    tags: ['economic', 'military', 'constitutional'],
+    body: `Why did the western empire end? Start with what this timeline itself shows. The division of 395 left the west the empire's long frontier and its thin tax base. The crossings of 406 turned Gaul and Spain from revenue provinces into war zones. The settlement of 418 established that armies could be paid in provinces — a solution that consumed the thing it defended. The loss of Africa in 439 cut the fiscal jugular, after which every failure is downstream of insolvency: no money, no army; no army, no reconquest; no reconquest, no money. The Huns accelerated everything twice — by pushing peoples across the frontier, and then by evaporating and stranding the west's balance-of-power strategy. When the joint expedition burned at Cape Bon in 468, the arithmetic closed. Nothing in that chain requires decadence, lead pipes, or divine judgment.
+
+But describing the mechanism does not settle the meaning, and here the professionals genuinely divide. One school — Peter Heather, Bryan Ward-Perkins — insists on the word "fall": a functioning state was destroyed by armed outsiders, and the archaeology of the aftermath shows real collapse, in pottery, coinage, building, literacy, even the size of cattle. Ward-Perkins in particular argues that post-Roman material life regressed to pre-Roman levels, and that calling this "transformation" launders a catastrophe. The other school — Peter Brown, Walter Goffart — replies that "fall" is the wrong lens: Late Antiquity was a creative religious and cultural transformation, the "barbarians" were mostly accommodated immigrants absorbed through Roman fiscal machinery, and the world of 550 grew out of the world of 400 without any single dying moment. On Goffart's reading, the settlements were Roman policy that eventually outgrew Roman control — an experiment, not an invasion.
+
+Notice that each side is answering a different question. Ask what happened to the western Roman state, and it died — visibly, datably, in the fifth century. Ask what happened to the people, and they mostly stayed put, kept their law and their religion, and became something else by degrees. Both answers are correct. The argument is about which question matters more, and that is a judgment, not a fact.`,
+    whyItMatters: `This closing argument is the app's real lesson: history at this scale is not a settled record but a live dispute conducted over evidence, and the fall of Rome is its greatest case study. Every century has refought this question in its own image — Gibbon blamed Christianity, nationalists credited vigorous Germans, and the current debate between catastrophe and transformation tracks our own anxieties about state failure and migration. Learn the mechanism, by all means: division, breach, settlement, Africa, insolvency. But learn equally that "fell" versus "transformed" is an argument about what an empire is — and that fifteen hundred years of hindsight have not resolved it, because it is not resolvable by hindsight alone.`,
+    misconception: {
+      claim: 'Rome fell because of decadence — or lead pipes, or Christianity sapping its strength.',
+      correction: 'Every single-cause explanation fails the same test: the east. It was richer, more urban, more Christian, drank from the same pipes — and lasted another thousand years. What differed was structure: the west had the long frontier, the thin tax base, and after 439, no Africa. The fall is a story about revenue and armies, not virtue.',
+    },
+    control: {},
+    connects: ['theodosius-division-395ce', 'vandals-africa-429ce', 'expedition-468ce', 'odoacer-476ce'],
+    sources: [
+      { author: 'Bryan Ward-Perkins', work: 'The Fall of Rome and the End of Civilization', note: 'The sharpest modern case for a real, material fall — argued from potsherds and roof tiles rather than battles.' },
+      { author: 'Peter Brown', work: 'The World of Late Antiquity', note: 'The founding text of the transformation school; reframes the era as creative change, and barely uses the word "decline".' },
+      { author: 'Walter Goffart', work: 'Barbarians and Romans', note: 'Source of the famous verdict that the fall was an "imaginative experiment that got a little out of hand" — the settlement system as Roman policy, not conquest.' },
+    ],
+  },
+];
