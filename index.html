@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#151a28" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!--
+      Content Security Policy. The app is entirely self-contained: no external
+      scripts, fonts, images, analytics or network calls of any kind, so
+      everything can be locked to 'self'. 'unsafe-inline' is required for
+      styles only, because the framework sets element styles inline.
+
+      frame-ancestors, HSTS and X-Content-Type-Options cannot be set from a
+      meta tag and must be configured on the host. See docs/DEPLOYMENT.md.
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'"
+    />
+
+    <meta
+      name="description"
+      content="Roman history from 1000 BCE to 476 CE, taught through a map that redraws itself as you move through time. 224 events, 82 corrections to things most people have wrong, and seven guided paths."
+    />
+    <title>LearnRome — Roman history on a map that redraws itself</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LearnRome" />
+    <meta property="og:title" content="LearnRome — Roman history on a map that redraws itself" />
+    <meta
+      property="og:description"
+      content="Type a date and watch the Mediterranean redraw. 224 events from the Iron Age villages above the Tiber to 476 and after, with the map as the memory scaffold."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="LearnRome — Roman history on a map that redraws itself" />
+    <meta
+      name="twitter:description"
+      content="Type a date and watch the Mediterranean redraw. 224 events, 82 misconceptions corrected, seven guided paths."
+    />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <div id="root">
+      <div
+        style="
+          height: 100dvh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 14px;
+          background: #0d1321;
+          color: #e8e3d8;
+          font-family: system-ui, -apple-system, sans-serif;
+        "
+      >
+        <div style="font-size: 25px; font-weight: 600; letter-spacing: -0.015em">
+          Learn<span style="color: #d9a441">Rome</span>
+        </div>
+        <div style="font-size: 12px; color: #9a94a6">1000 BCE – 476 CE</div>
+        <div style="width: 132px; height: 2px; overflow: hidden; border-radius: 2px; background: #2e3547">
+          <div style="width: 40%; height: 100%; background: #d9a441; animation: lr-sweep 1.1s ease-in-out infinite"></div>
+        </div>
+      </div>
+    </div>
+    <style>
+      @keyframes lr-sweep {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(330%); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        [style*='lr-sweep'] { animation: none !important; }
+      }
+    </style>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
