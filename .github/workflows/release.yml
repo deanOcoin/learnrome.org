@@ -1,0 +1,27 @@
+name: Release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - name: Package the static site
+        run: |
+          cd dist && zip -qr "../learnrome-${GITHUB_REF_NAME#v}-static.zip" . && cd ..
+          sha256sum learnrome-*-static.zip > SHA256SUMS.txt
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" --title "LearnRome ${GITHUB_REF_NAME#v}" --notes-file .github/release-notes.md learnrome-*-static.zip SHA256SUMS.txt
